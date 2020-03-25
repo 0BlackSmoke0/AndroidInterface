@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conOp"
+        android:text="OU"
+        app:layout_constraintTop_toBottomOf="@id/btCad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69"/>
+
+    <ImageView
+        android:id="@+id/imageOp"
+        android:layout_width="wrap_content"
+        android:layout_height="148dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.70"
+        app:layout_constraintLeft_creator="@android:integer/status_bar_notification_info_maxnum"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:text="Cadastre-se"
+        android:textColor="#FFF"
+        android:fontFamily="@f"
+        android:id="@+id/btCad"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:background="@drawable/botaocad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.60"
+        />
+
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:text="Entrar"
+        android:textColor="#FFF"
+        android:id="@+id/btLogin"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:background="@drawable/botaoent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.80"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

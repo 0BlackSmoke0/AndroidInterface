@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você se encaixa em qual perfil?!"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#3B8B3E"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10"/>
+
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Gerenciar somente minha plantação"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif"
+        android:id="@+id/btGP"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:background="@drawable/botaoent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Gerenciar minha plantação e leiloar"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif"
+        android:id="@+id/btGL"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:background="@drawable/botaocad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Apenas leiloar"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif"
+        android:id="@+id/btAL"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:background="@drawable/botaocad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Apenas negociar"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif"
+        android:id="@+id/btAN"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:background="@drawable/botaocad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

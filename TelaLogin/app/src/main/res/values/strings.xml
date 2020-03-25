@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProjetoSemestre</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in"></string>
+    <string name="action_sign_in_short">Logar</string>
+    <string name="welcome">"Bem vindo !"</string>
+    <string name="invalid_username">Email inválido!</string>
+    <string name="invalid_password">Senha inválida</string>
+    <string name="login_failed">"falha no login!"</string>
+</resources>
