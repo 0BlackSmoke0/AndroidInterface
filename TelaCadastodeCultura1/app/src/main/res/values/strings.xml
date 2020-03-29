@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TelaCadastroCultura</string>
+    <string-array name="array_name">
+        <item>Selecione...</item>
+        <item>2-3 semanas</item>
+        <item>3-6 semanas</item>
+        <item>6-12 semanas</item>
+        <item>1-3 meses</item>
+        <item>4-8 meses</item>
+        <item>8-12 meses</item>
+    </string-array>
+
+    <string-array name="array_regaçao">
+        <item>Selecione...</item>
+        <item>100 a 300ml a cada 5h</item>
+        <item>400 a 700ml a cada 5h</item>
+        <item>800ml a 1L a cada 5h</item>
+        <item>2L a 5L a cada 5h</item>
+        <item>6L a 9L a cada 5h</item>
+    </string-array>
+
+    <string-array name="array_tipo">
+        <item>Selecione...</item>
+        <item>Semente</item>
+        <item>Raíz</item>
+        <item>Muda</item>
+    </string-array>
+
+    <string-array name="array_disponibilidade">
+        <item>Selecione...</item>
+        <item>Disponívél</item>
+        <item>Ocupado</item>
+    </string-array>
+
+    <string-array name="array_uni_venda">
+        <item>Selecione...</item>
+        <item>Caixa</item>
+        <item>Saco</item>
+        <item>Pacote</item>
+    </string-array>
+
+</resources>
