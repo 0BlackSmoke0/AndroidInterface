@@ -39,8 +39,4 @@
         <item>Pacote</item>
     </string-array>
 
-    <string-array name="array_padrao">
-    <item>Selecione...</item>
-    </string-array>
-
 </resources>
