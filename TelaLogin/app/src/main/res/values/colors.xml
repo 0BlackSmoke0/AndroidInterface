@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#01A994</color>
+    <color name="colorPrimary">#60cc8c</color>
     <color name="colorPrimaryDark">#52A875</color>
     <color name="colorAccent">#60cc8c</color>
     <color name="btcollor">#60cc8c</color>
+    <color name="btnCancelar">#F30606</color>
 </resources>
