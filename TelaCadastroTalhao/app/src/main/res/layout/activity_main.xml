@@ -166,7 +166,7 @@
             android:id="@+id/areatalhao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Distancia entre talhões: (em metros)"
+            android:text="Distancia entre canteiros (em metros):"
             android:textColor="#000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.557"

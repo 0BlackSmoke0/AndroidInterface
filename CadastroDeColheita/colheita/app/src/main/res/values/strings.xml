@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TelaCadastroCultura</string>
+
+
+<string-array name="array_plantacao">
+<item>Selecione...</item>
+
+</string-array>
+
+    <string-array name="array_disponibilidade">
+        <item>Selecione...</item>
+        <item>Disponívél</item>
+        <item>Ocupado</item>
+    </string-array>
+
+    <string-array name="array_uni_venda">
+        <item>Selecione...</item>
+        <item>Caixa</item>
+        <item>Saco</item>
+        <item>Pacote</item>
+    </string-array>
+
+    <string-array name="array_padrao">
+        <item>Selecione...</item>
+    </string-array>
+
+</resources>
