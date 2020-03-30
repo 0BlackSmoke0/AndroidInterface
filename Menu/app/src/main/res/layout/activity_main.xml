@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <Button
+        android:id="@+id/talhão"
+        android:layout_width="152dp"
+        android:layout_height="138dp"
+        android:background="@drawable/botaocad"
+        android:drawableTop="@drawable/talhao"
+        android:text="talhão"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/insumo"
+        android:layout_width="152dp"
+        android:layout_height="138dp"
+        android:background="@drawable/botaocad"
+        android:drawableTop="@drawable/insumo"
+        android:text="insumo"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <Button
+        android:id="@+id/cultura"
+        android:layout_width="152dp"
+        android:layout_height="138dp"
+        android:background="@drawable/botaocad"
+        android:drawableTop="@drawable/cultura"
+        android:text="cultura"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/colheita"
+        android:layout_width="152dp"
+        android:layout_height="138dp"
+        android:background="@drawable/botaocad"
+        android:drawableTop="@drawable/colheita"
+        android:text="Colheita"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/leilao"
+        android:layout_width="152dp"
+        android:layout_height="138dp"
+        android:background="@drawable/botaocad"
+        android:drawableTop="@drawable/leilao"
+        android:text="leilão"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <ImageButton
+        android:id="@+id/plantacao"
+        android:layout_width="152dp"
+        android:layout_height="138dp"
+        android:layout_x="11dp"
+        android:layout_y="207dp"
+        android:onClick="instrucoes"
+        android:text="plantação"
+        android:src="@drawable/plantacao"
+        android:background="@drawable/botaocad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
