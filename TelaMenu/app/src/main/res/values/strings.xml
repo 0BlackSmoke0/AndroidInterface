@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">TelaOpcional</string>
+
+    <string name="app_name">TelaMenu</string>
     <string-array name="array_name">
         <item>Selecione...</item>
         <item>2-3 semanas</item>
@@ -38,5 +39,39 @@
         <item>Saco</item>
         <item>Pacote</item>
     </string-array>
+
+    <string-array name="array_padrao">
+    <item>Selecione...</item>
+    </string-array>
+
+    <string-array name="array_insumos">
+        <item>Selecione...</item>
+        <item>Biológico</item>
+        <item>Químico</item>
+    </string-array>
+
+
+    <string-array name="array_tempo_acao">
+        <item>Selecione...</item>
+        <item>Horas</item>
+        <item>Dias</item>
+        <item>Semanas</item>
+        <item>Mês</item>
+    </string-array>
+
+    <string-array name="array_insumos_quant_recomendada">
+        <item>Selecione...</item>
+        <item>LT</item>
+        <item>ML</item>
+        <item>KG</item>
+        <item>G</item>
+    </string-array>
+
+    <string-array name="array_quant_agua_aplicada">
+    <item>Selecione...</item>
+    <item>LT</item>
+    <item>ML</item>
+    </string-array>
+
 
 </resources>
