@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Leilão</string>
+
+
+    <string-array name="array_padrao">
+        <item>Selecione...</item>
+    </string-array>
+
+</resources>
