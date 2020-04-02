@@ -1,4 +1,4 @@
-package com.example.cadastrodetalho
+package com.example.telacadastroinsumos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

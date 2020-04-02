@@ -1,8 +1,78 @@
 <resources>
+
     <string name="app_name">TelaCadastroTalhao</string>
     <string-array name="array_name">
+        <item>Selecione...</item>
+        <item>2-3 semanas</item>
+        <item>3-6 semanas</item>
+        <item>6-12 semanas</item>
+        <item>1-3 meses</item>
+        <item>4-8 meses</item>
+        <item>8-12 meses</item>
+    </string-array>
+
+    <string-array name="array_regaçao">
+        <item>Selecione...</item>
+        <item>100 a 300ml a cada 5h</item>
+        <item>400 a 700ml a cada 5h</item>
+        <item>800ml a 1L a cada 5h</item>
+        <item>2L a 5L a cada 5h</item>
+        <item>6L a 9L a cada 5h</item>
+    </string-array>
+
+    <string-array name="array_tipo">
+        <item>Selecione...</item>
+        <item>Semente</item>
+        <item>Raíz</item>
+        <item>Muda</item>
+    </string-array>
+
+    <string-array name="array_disponibilidade">
         <item>Selecione...</item>
         <item>Disponível</item>
         <item>Ocupado</item>
     </string-array>
-    </resources>
+
+    <string-array name="array_uni_venda">
+        <item>Selecione...</item>
+        <item>Caixa</item>
+        <item>Saco</item>
+        <item>Pacote</item>
+    </string-array>
+
+    <string-array name="array_padrao">
+    <item>Selecione...</item>
+    </string-array>
+
+    <string-array name="array_insumos">
+        <item>Selecione...</item>
+        <item>Biológico</item>
+        <item>Químico</item>
+    </string-array>
+
+
+    <string-array name="array_tempo_acao">
+        <item>Selecione...</item>
+        <item>Horas</item>
+        <item>Dias</item>
+        <item>Semanas</item>
+        <item>Mês</item>
+    </string-array>
+
+    <string-array name="array_insumos_quant_recomendada">
+        <item>Selecione...</item>
+        <item>LT</item>
+        <item>ML</item>
+        <item>KG</item>
+        <item>G</item>
+    </string-array>
+
+    <string-array name="array_area">
+        <item>Selecione...</item>
+        <item>CM</item>
+        <item>M</item>
+        <item>KM</item>
+    </string-array>
+
+
+</resources>

@@ -1,238 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        android:background="@drawable/pontilhado">
-
-    <TextView
-            android:id="@+id/talhao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="Cadastro de talhão"
-            android:textColor="@color/colorPrimary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.15"
-            android:textSize="20dp"/>
-
-
+        android:orientation="vertical">
 
     <ImageView
-            android:id="@+id/faixa"
-            android:layout_width="432dp"
-            android:layout_height="48dp"
-            android:background="@drawable/faixa"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+        android:id="@+id/faixa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/faixa"
+        android:theme="@style/AppTheme"
+        android:layout_marginBottom="20dp"/>
 
     <TextView
-            android:id="@+id/nometalhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de talhão"
+        android:textSize="20dp"
+        android:fontFamily="@font/exo_2_semibold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="20dp"/>
+
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
             android:text="Nome do talhão:"
             android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.333"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.237"/>
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
 
-    <EditText
-            android:id="@+id/inputalhao"
+
+        <EditText
+            android:id="@+id/input_nome_talhao"
             android:layout_width="225dp"
             android:layout_height="40dp"
             android:background="@drawable/inputboard"
-            android:inputType="text"
+            android:fontFamily="@font/exo_2"
+            android:inputType="textEmailAddress"
             android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.548"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.283"/>
+            android:hint="Informe o talhão..."
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
 
-    <TextView
-            android:id="@+id/disp"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
             android:text="Disponibilidade:"
             android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.327"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.352"/>
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
 
-
-    <TextView
-            android:id="@+id/areatalhao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quantidade de ruas:"
-            android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.356"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.703"/>
-
-    <Spinner
-            android:id="@+id/disp_spinner"
+        <Spinner
+            android:id="@+id/insumo_disponibilidade_talhao"
             android:layout_width="225dp"
             android:layout_height="40dp"
             android:background="@drawable/inputboard"
             android:drawSelectorOnTop="true"
-            android:entries="@array/array_name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.548"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4"/>
+            android:entries="@array/array_disponibilidade"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
 
-    <TextView
-            android:id="@+id/area"
-            android:layout_width="15dp"
-            android:layout_height="22dp"
-            android:text="X"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Área vertical:"
             android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.53"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.526"/>
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
 
-    <EditText
-            android:id="@+id/areatalhao2"
-            android:layout_width="95dp"
-            android:layout_height="37dp"
-            android:background="@drawable/inputboard"
-            android:hint=""
-            android:inputType="numberDecimal"
-            android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.284"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.515"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <EditText
-            android:id="@+id/areatalhao2"
-            android:layout_width="95dp"
-            android:layout_height="37dp"
-            android:background="@drawable/inputboard"
-            android:hint=""
-            android:inputType="numberDecimal"
-            android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.772"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.515"/>
-
-    <EditText
-            android:id="@+id/disttalhao"
-            android:layout_width="225dp"
+        <EditText
+            android:id="@+id/input_area_vertical"
+            android:layout_width="45dp"
             android:layout_height="40dp"
             android:background="@drawable/inputboard"
-            android:hint=""
-            android:inputType="numberDecimal"
+            android:fontFamily="@font/exo_2"
+            android:inputType="number"
+            android:hint=" .  .  ."
             android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.548"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.762"/>
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
 
-    <TextView
-            android:id="@+id/areatalhao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Distancia entre canteiros (em metros):"
-            android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.557"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.584"/>
-    <EditText
-            android:id="@+id/distancia"
-            android:layout_width="225dp"
+        <Spinner
+            android:id="@+id/input_area_vertical_talhao"
+            android:layout_width="100dp"
             android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:hint=""
-            android:inputType="numberDecimal"
-            android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.548"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.645"/>
+            android:background="@drawable/inputpeq"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_area"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"/>
 
-    <TextView
-            android:id="@+id/area"
-            android:layout_width="wrap_content"
-            android:layout_height="22dp"
-            android:text="Área:"
-            android:textColor="#000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.269"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.473"/>
+    </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_2"
+                android:text="Área horizontal:"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"/>
 
+        </LinearLayout>
 
-
-    <Button
-            android:id="@+id/cadastrartalhao"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn"
-            android:text="Cadastrar"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.25"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.934"/>
+            android:orientation="horizontal">
 
-    <Button
-            android:id="@+id/cancelarcultuta"
+            <EditText
+                android:id="@+id/input_area_horizontal"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputboard"
+                android:hint=" .  .  ."
+                android:fontFamily="@font/exo_2"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/input_area_horizontal_talhao"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputpeq"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_area"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_2"
+                android:text="Distância entre ruas:"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/btncancelar"
-            android:text="Cancelar"
-            android:textColor="#FFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.777"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.934"/>
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_distancia_talhao"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputboard"
+                android:hint=" .  .  ."
+                android:fontFamily="@font/exo_2"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/input_distancia_rua_talhao"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputpeq"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_area"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_2"
+                android:text="Quantidade de ruas:"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"/>
+
+
+            <EditText
+                android:id="@+id/input_quant_rua_talhao"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:inputType="number"
+                android:hint="Informe..."
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"/>
+
+
+           </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/cadastrar_talhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/exo_2"
+                android:text="Cadastrar"
+                android:textColor="#FFF"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/cancelar_talhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btncancelar"
+                android:fontFamily="@font/exo_2"
+                android:text="cancelar"
+                android:textColor="#FFF"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
