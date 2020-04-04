@@ -6,4 +6,11 @@
         <item>Selecione...</item>
     </string-array>
 
+    <string-array name="array_recipiente">
+        <item>Selecione...</item>
+        <item>Caixas</item>
+        <item>Sacos</item>
+    </string-array>
+
+
 </resources>

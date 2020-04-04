@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/faixa"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/faixa"
+            android:theme="@style/AppTheme"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/cultura1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/exo_2_semibold"
+            android:text="Cadastro de usuário"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/exo_2"
+            android:text="Informe os dados a seguir."
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Nome completo:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <EditText
+            android:id="@+id/input_nome_usuario"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:inputType="textEmailAddress"
+            android:hint=".   .   ."
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Data de nascimento:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <EditText
+            android:id="@+id/input_nasc_usuario"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:inputType="date"
+            android:hint="00/00/0000"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Sexo:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+        <Spinner
+            android:id="@+id/planets_uni_vendas"
+            android:layout_width="205dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_sexo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Telefone:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_area_vertical"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:inputType="textCapSentences"
+                android:hint="(DD) 0000-0000"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"/>
+
+            <Spinner
+                android:id="@+id/input_tipo_contato"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_tipo_contato"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/unidade_por_metro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="CPF:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+
+        <EditText
+            android:id="@+id/input_cpf"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:hint="000.000.000-00"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="E-mail:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:hint="exemplo@exemplo.com"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+            android:id="@+id/cadastrarcultuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:fontFamily="@font/exo_2"
+            android:text="Cadastrar"
+            android:textColor="#FFF"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/cancelarcultuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btncancelar"
+            android:fontFamily="@font/exo_2"
+            android:text="cancelar"
+            android:textColor="#FFF"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
