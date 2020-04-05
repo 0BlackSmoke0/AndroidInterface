@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivityCadastroUsuario">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/faixa"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="20dp"
             android:background="@drawable/faixa"
             android:theme="@style/AppTheme"
             android:layout_marginBottom="20dp"/>
@@ -204,25 +204,20 @@
             android:layout_marginTop="20dp">
 
             <Button
-                android:id="@+id/cadastrar_usuario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn"
+                android:id="@+id/bt_avanca"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/seta2"
                 android:fontFamily="@font/exo_2"
-                android:text="Cadastrar"
-                android:textColor="#FFF"
                 android:layout_marginLeft="70dp"
                 android:layout_marginBottom="10dp"/>
 
             <Button
-                android:id="@+id/cancelar_usuario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btncancelar"
-                android:fontFamily="@font/exo_2"
-                android:text="cancelar"
-                android:textColor="#FFF"
-                android:layout_marginLeft="50dp"
+                android:id="@+id/bt_voltar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/seta"
+                android:layout_marginLeft="125dp"
                 android:layout_marginBottom="10dp"/>
 
         </LinearLayout>
