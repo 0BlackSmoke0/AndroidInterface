@@ -1,13 +1,13 @@
 package com.example.easyagro
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class MainActivityTipoUsuario : AppCompatActivity() {
+class MainActivity_cadastro_senha : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_tipo_usuario)
+        setContentView(R.layout.activity_main_cadastro_senha)
 
         if(supportActionBar != null){
 
