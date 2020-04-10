@@ -204,7 +204,7 @@
             android:layout_marginTop="20dp">
 
             <Button
-                android:id="@+id/bt_avanca"
+                android:id="@+id/bt_avancatela"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/seta2"
@@ -213,7 +213,7 @@
                 android:layout_marginBottom="10dp"/>
 
             <Button
-                android:id="@+id/bt_voltar"
+                android:id="@+id/bt_voltartela"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/seta"

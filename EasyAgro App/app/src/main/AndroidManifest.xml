@@ -11,8 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
-        <activity android:name=".MainActivity_cadastro_senha"/>
+        <activity android:name=".MainActivityFinalzarCad"/>
+        <activity android:name=".MainActivityCadastroSenha" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

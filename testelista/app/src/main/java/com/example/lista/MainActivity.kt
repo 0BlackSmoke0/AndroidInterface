@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var listview = findViewById<ListView>(R.id.listView)
+        val listview = findViewById<ListView>(R.id.listView)
 
-        var list = mutableListOf<Model>()
+        val list = mutableListOf<Model>()
 
        list.add(Model("Batata", "batata daora", R.drawable.batata))
         list.add(Model("Cenoura", "cenoura daora", R.drawable.cenoura))
