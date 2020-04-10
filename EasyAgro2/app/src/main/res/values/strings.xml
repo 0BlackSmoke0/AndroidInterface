@@ -60,29 +60,29 @@
 
     <string-array name="array_insumos_quant_recomendada">
         <item>Selecione...</item>
-        <item>LT</item>
-        <item>ML</item>
-        <item>KG</item>
-        <item>G</item>
+        <item>LT-Litros</item>
+        <item>ML-Mililitros</item>
+        <item>KG-Kilograma</item>
+        <item>G-Miligramas</item>
     </string-array>
 
     <string-array name="array_quant_agua_aplicada">
         <item>Selecione...</item>
-        <item>LT</item>
-        <item>ML</item>
+        <item>LT-Litros</item>
+        <item>ML-Mililitros</item>
     </string-array>
 
     <string-array name="array_area">
         <item>Selecione...</item>
-        <item>CM</item>
-        <item>M</item>
-        <item>KM</item>
+        <item>CM-Centimetros</item>
+        <item>M-Metros</item>
+        <item>KM-Kilometros</item>
     </string-array>
 
     <string-array name="array_recipiente">
         <item>Selecione...</item>
-        <item>Caixas</item>
-        <item>Sacos</item>
+        <item>CX-Caixas</item>
+        <item>SC-Sacos</item>
     </string-array>
 
     <string-array name="array_tipo_contato">
@@ -95,5 +95,11 @@
         <item>Selecione...</item>
         <item>Masculino</item>
         <item>Feminino</item>
+    </string-array>
+
+    <string-array name="array_pesagem">
+        <item>Selecione...</item>
+        <item>G-Miligramas</item>
+        <item>KG-Kilogramas</item>
     </string-array>
 </resources>

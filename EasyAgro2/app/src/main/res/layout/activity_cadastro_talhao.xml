@@ -1,11 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivityCadastroTalhao">
 
+<!-- Menu Fixo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/link_cadastroTalhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="40dp"
+            android:text="Cadastro"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_listaTalhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Lista"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_graficoTalhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Gráfico"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/menu_geralTalhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFF"
+            android:text="°°°"
+            android:textSize="20sp"
+            android:rotation="@android:integer/status_bar_notification_info_maxnum"/>
+    </LinearLayout>
+<!-- Rolagem de tela -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--Campos e inputs "nome talhão, disponibilidade e área vertical" LinearLayout principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -83,7 +141,7 @@
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="70dp"/>
-
+<!-- input área vertical -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -113,7 +171,7 @@
                 android:layout_marginLeft="7dp"/>
 
         </LinearLayout>
-
+<!-- Campo área horizontal-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -130,7 +188,7 @@
                 android:layout_marginLeft="70dp"/>
 
         </LinearLayout>
-
+<!-- input área horizontal-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -160,7 +218,7 @@
                 android:layout_marginLeft="7dp"/>
 
         </LinearLayout>
-
+<!-- Campo distância de ruas -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -177,7 +235,7 @@
                 android:layout_marginLeft="70dp"/>
 
         </LinearLayout>
-
+<!-- Distância de ruas e talhões-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -207,8 +265,7 @@
                 android:layout_marginLeft="7dp"/>
 
         </LinearLayout>
-
-
+<!-- Campo e inputs quantidades de ruas-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -240,7 +297,7 @@
 
 
         </LinearLayout>
-
+<!-- Botões Cadastrar e Cancelar-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -270,6 +327,6 @@
                 android:layout_marginBottom="10dp"/>
 
         </LinearLayout>
-
-    </LinearLayout>
-</ScrollView>
+      </LinearLayout>
+    </ScrollView>
+</LinearLayout>

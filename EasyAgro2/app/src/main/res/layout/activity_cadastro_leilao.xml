@@ -1,11 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivityCadastroLeilao">
 
+<!--Menu fixo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/link_cadastroLeilao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="40dp"
+            android:text="Cadastro"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_listaLeilao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Lista"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_graficoLeilao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Gráfico"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_menuLeilao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFF"
+            android:text="°°°"
+            android:textSize="20sp"
+            android:rotation="@android:integer/status_bar_notification_info_maxnum"/>
+
+
+    </LinearLayout>
+<!--Rolagem de tela -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--Campos e inputs "selecione colheita, quantidade" -->
+        <!--LinearLayout principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,7 +91,6 @@
             android:layout_marginLeft="80dp"
             android:layout_marginTop="-10dp"/>
 
-
         <TextView
             android:layout_width="218dp"
             android:layout_height="53dp"
@@ -41,7 +101,6 @@
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="70dp"/>
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -63,7 +122,6 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="70dp"/>
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,8 +131,7 @@
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="70dp"/>
-
-
+<!--inputs quantidade -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -104,6 +161,12 @@
                 android:layout_marginLeft="7dp"/>
 
         </LinearLayout>
+<!--Camos e inputs "Preço lote, data leilão, data consumo" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -174,7 +237,8 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="70dp"/>
 
-
+        </LinearLayout>
+<!--Botões Cadastrar e Cancelar -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -203,7 +267,8 @@
                 android:layout_marginBottom="10dp"/>
 
         </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+</LinearLayout>
 
-    </LinearLayout>
 
-</ScrollView>

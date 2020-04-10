@@ -14,13 +14,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principal)
 
+        if(supportActionBar != null){
+
+            supportActionBar!!.hide()
+        }
+
         bt_colheita.setOnClickListener(this)
         bt_cultura.setOnClickListener(this)
         bt_leilao.setOnClickListener(this)
         bt_plantacao.setOnClickListener(this)
         bt_talhão.setOnClickListener(this)
         bt_insumo.setOnClickListener(this)
-
     }
 
     override fun onClick(view: View) {

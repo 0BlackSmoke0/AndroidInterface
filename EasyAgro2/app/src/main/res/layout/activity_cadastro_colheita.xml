@@ -1,11 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivityCadastroColheita">
 
+<!--Menu fixo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/link_cadastroColheita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="40dp"
+            android:text="Cadastro"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_listaColheita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Lista"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_graficoColheita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Gráfico"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_menuColheita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFF"
+            android:text="°°°"
+            android:textSize="20sp"
+            android:rotation="@android:integer/status_bar_notification_info_maxnum"/>
+
+
+    </LinearLayout>
+<!--Rolagem de tela -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--LinearLayout principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -53,47 +113,82 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/exo_2"
-            android:text="Quantidade de caixas:"
+            android:text="Quantidade de recipientes:"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="70dp"/>
+<!--input quant e tipo do recipiente -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/qtd_caixas_colheita"
-            android:layout_width="224dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:fontFamily="@font/exo_2"
-            android:hint=""
-            android:inputType="numberDecimal"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            <EditText
+                android:id="@+id/input_quat_num"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:inputType="number"
+                android:hint=" .  .  ."
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"/>
+
+            <Spinner
+                android:id="@+id/input_tipo_recipiente"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_recipiente"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/exo_2"
-            android:text="Peso por caixa:"
+            android:text="Peso por recipiente:"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="70dp"/>
+<!--input peso por recipiente -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/peso_caixa_colheita"
-            android:layout_width="226dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:fontFamily="@font/exo_2"
-            android:hint="KG"
-            android:inputType="numberDecimal"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            <EditText
+                android:id="@+id/input_peso_recpiente"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:inputType="number"
+                android:hint=" .  .  ."
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"/>
+
+
+            <Spinner
+                android:id="@+id/input_pesoem_recpiente"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_pesagem"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -107,7 +202,7 @@
 
         <EditText
             android:id="@+id/preco_estimado_colheita"
-            android:layout_width="225dp"
+            android:layout_width="150dp"
             android:layout_height="40dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
@@ -130,7 +225,7 @@
 
         <EditText
             android:id="@+id/preco_pretendido_colheita"
-            android:layout_width="225dp"
+            android:layout_width="150dp"
             android:layout_height="40dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
@@ -153,7 +248,7 @@
 
         <EditText
             android:id="@+id/custo_colheita"
-            android:layout_width="225dp"
+            android:layout_width="150dp"
             android:layout_height="40dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
@@ -177,7 +272,7 @@
 
         <EditText
             android:id="@+id/data_colheita"
-            android:layout_width="225dp"
+            android:layout_width="150dp"
             android:layout_height="40dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
@@ -188,8 +283,8 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="70dp"/>
 
-
-        <LinearLayout
+<!--Botões Cdastrar e Cancelar -->
+           <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -217,7 +312,7 @@
                 android:layout_marginBottom="10dp"/>
 
         </LinearLayout>
-
+         </LinearLayout>
+       </ScrollView>
     </LinearLayout>
 
-</ScrollView>

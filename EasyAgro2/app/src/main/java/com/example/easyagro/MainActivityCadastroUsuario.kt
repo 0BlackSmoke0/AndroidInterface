@@ -8,5 +8,10 @@ class MainActivityCadastroUsuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_usuario)
+
+        if(supportActionBar != null){
+
+            supportActionBar!!.hide()
+        }
     }
 }

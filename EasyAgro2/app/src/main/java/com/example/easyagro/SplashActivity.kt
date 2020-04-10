@@ -13,6 +13,10 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_tela1)
 
+        if(supportActionBar != null){
+
+            supportActionBar!!.hide()
+        }
 
         btnCad.setOnClickListener(this)
         btLogin.setOnClickListener(this)

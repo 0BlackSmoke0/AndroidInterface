@@ -10,5 +10,10 @@ class MainActivityCadastroTalhao : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_talhao)
+
+        if(supportActionBar != null){
+
+            supportActionBar!!.hide()
+        }
     }
 }
