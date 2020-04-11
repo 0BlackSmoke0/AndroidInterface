@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityFinalzarCad">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro finalizado"
+        android:fontFamily="@font/exo_2_semibold"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="60dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ok"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agora use o e-mail e a senha cadastrada"
+        android:layout_marginStart="45dp"
+        android:fontFamily="@font/exo_2"
+        android:textColor="#000"
+        android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="para entrar no sistema."
+            android:fontFamily="@font/exo_2"
+            android:layout_marginStart="105dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/bt_cadastroValidado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Vamos lá!  "
+        android:textColor="#FFF"
+        android:background="@drawable/btncadastrar"
+        android:layout_marginStart="140dp"/>
+
+</LinearLayout>

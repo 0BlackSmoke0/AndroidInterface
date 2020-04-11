@@ -6,7 +6,11 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 29
+<<<<<<< HEAD
     buildToolsVersion "29.0.3"
+=======
+    buildToolsVersion "29.0.2"
+>>>>>>> ddc75c0d07c691e8f50dea8396e81ce754649d98
     defaultConfig {
         applicationId "com.example.lista"
         minSdkVersion 23

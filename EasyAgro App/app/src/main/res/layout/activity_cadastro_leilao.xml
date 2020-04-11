@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityCadastroLeilao">
+
+<!--Menu fixo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/link_cadastroLeilao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="40dp"
+            android:text="Cadastro"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_listaLeilao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Lista"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_graficoLeilao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:text="Gráfico"
+            android:fontFamily="@font/exo_2_semibold"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/link_menuLeilao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFF"
+            android:text="°°°"
+            android:textSize="20sp"
+            android:rotation="@android:integer/status_bar_notification_info_maxnum"/>
+
+
+    </LinearLayout>
+<!--Rolagem de tela -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--Campos e inputs "selecione colheita, quantidade" -->
+        <!--LinearLayout principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/faixa"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/faixa"
+            android:theme="@style/AppTheme"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="    Cadastro de Leilão"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="-10dp"/>
+
+        <TextView
+            android:layout_width="218dp"
+            android:layout_height="53dp"
+            android:fontFamily="@font/exo_2"
+            android:text="Cadastre os itens que deseja por a venda"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Selecione a colheita:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <Spinner
+            android:id="@+id/selcolheita_spinner"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_padrao"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Quantidade de caixas:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+<!--inputs quantidade -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_area_vertical"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:inputType="number"
+                android:hint=" .  .  ."
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="70dp"/>
+
+            <Spinner
+                android:id="@+id/input_area_vertical_talhao"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/inputboard"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_recipiente"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
+<!--Camos e inputs "Preço lote, data leilão, data consumo" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Preço do lote :"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <EditText
+            android:id="@+id/preco"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:hint="R$"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Data de vencimento do leilão:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <EditText
+            android:id="@+id/data"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:hint="00/00/0000"
+            android:inputType="date"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:text="Data de consumo:"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        <EditText
+            android:id="@+id/datacons"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:hint="00/00/0000"
+            android:inputType="date"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
+        </LinearLayout>
+<!--Botões Cadastrar e Cancelar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/cadastrarleilao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/exo_2"
+                android:text="Cadastrar"
+                android:textColor="#FFF"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/cancelarleilao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btncancelar"
+                android:fontFamily="@font/exo_2"
+                android:text="cancelar"
+                android:textColor="#FFF"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

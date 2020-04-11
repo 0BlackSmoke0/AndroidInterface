@@ -1,0 +1,80 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.easyagro"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:6:5-32:19
+12        android:allowBackup="true"
+12-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.0.2] C:\Users\cleri.ariane\.gradle\caches\transforms-2\files-2.1\c7e28cf33a8972d116e817b742b7a10c\core-1.0.2\AndroidManifest.xml:22:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:8:9-43
+16        android:label="@string/app_name"
+16-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:9:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:10:9-54
+18        android:supportsRtl="true"
+18-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:11:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:12:9-40
+21        <activity android:name="com.example.easyagro.Main2Activity" />
+21-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:14:9-60
+21-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:14:19-48
+22        <activity android:name="com.example.easyagro.SplashActivity" >
+22-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:15:9-21:20
+22-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:15:19-49
+23            <intent-filter>
+23-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:16:13-20:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:17:17-69
+24-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:17:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:19:17-77
+26-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:19:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.example.easyagro.MainActivityTipoUsuario" />
+29-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:22:9-61
+29-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:22:19-58
+30        <activity android:name="com.example.easyagro.MainActivityInfoResidencia" />
+30-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:23:9-64
+30-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:23:19-61
+31        <activity android:name="com.example.easyagro.MainActivityCadastroUsuario" />
+31-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:24:9-65
+31-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:24:19-62
+32        <activity android:name="com.example.easyagro.MainActivityCadastroLeilao" />
+32-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:25:9-64
+32-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:25:19-61
+33        <activity android:name="com.example.easyagro.MainActivityCadastroTalhao" />
+33-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:26:9-64
+33-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:26:19-61
+34        <activity android:name="com.example.easyagro.MainActivityCadastroColheita" />
+34-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:27:9-66
+34-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:27:19-63
+35        <activity android:name="com.example.easyagro.MainActivityCadastroPlantacao" />
+35-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:28:9-67
+35-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:28:19-64
+36        <activity android:name="com.example.easyagro.MainActivityCadastroInsumo" />
+36-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:29:9-64
+36-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:29:19-61
+37        <activity android:name="com.example.easyagro.MainActivityCadastroCultura" />
+37-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:30:9-65
+37-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:30:19-62
+38        <activity android:name="com.example.easyagro.MainActivity" />
+38-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:31:9-50
+38-->C:\Users\cleri.ariane\Desktop\AndroidInterface\EasyAgro2\app\src\main\AndroidManifest.xml:31:19-47
+39    </application>
+40
+41</manifest>
