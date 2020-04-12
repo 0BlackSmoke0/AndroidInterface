@@ -19,7 +19,6 @@
       <change afterPath="$PROJECT_DIR$/../MultiplasTelas/app/src/main/res/layout/activity_tela2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testelista/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testelista/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testelista/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testelista/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testelista/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testelista/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../testelista/app/build.gradle" afterDir="false" />
@@ -49,17 +48,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />

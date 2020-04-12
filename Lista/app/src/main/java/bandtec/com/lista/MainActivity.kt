@@ -16,11 +16,11 @@ class MainActivity : AppCompatActivity() {
         var listView = findViewById<ListView>(R.id.listView)
         var list = mutableListOf<Model>()
 
-        list.add(Model("Facebook", "Facebook description..", R.drawable.insumoa))
-        list.add(Model("Whatsapp", "Whatsapp description..", R.drawable.insumob))
-        list.add(Model("Twitter", "Twitter description..", R.drawable.insumoc))
-        list.add(Model("Instagram", "Instagram description..", R.drawable.insumoc))
-        list.add(Model("Youtube", "Youtube description..", R.drawable.insumod))
+        list.add(Model("Insumo 1", "Descrição insumo 1..", R.drawable.insumoa))
+        list.add(Model("Insumo 2", "Descrição insumo 2..", R.drawable.insumob))
+        list.add(Model("Insumo 3", "Descrição insumo 3..", R.drawable.insumoc))
+        list.add(Model("Insumo 4", "Descrição insumo 4..", R.drawable.insumoc))
+        list.add(Model("Insumo 5", "Descrição insumo 5..", R.drawable.insumod))
 
         listView.adapter = MyAdapter(this, R.layout.linha, list)
 
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "You click on Instagram!", Toast.LENGTH_LONG).show()
             }
             if (position == 4){
-                Toast.makeText(this@MainActivity, "You click on Youtube!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity, "You click on Insumo 5!", Toast.LENGTH_LONG).show()
             }
         }
     }
