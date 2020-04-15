@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastro finalizado"
+        android:text="@string/finalizarTextoPrincipal"
         android:fontFamily="@font/exo_2_semibold"
         android:textSize="30sp"
         android:textColor="@color/colorPrimary"
@@ -28,7 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agora use o e-mail e a senha cadastrada"
+        android:text="@string/finalizarTextoSecundario"
         android:layout_marginStart="45dp"
         android:fontFamily="@font/exo_2"
         android:textColor="#000"
@@ -37,7 +37,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="para entrar no sistema."
+            android:text="@string/finalizarTextoTerciario"
             android:fontFamily="@font/exo_2"
             android:layout_marginStart="105dp"
             android:textColor="#000"
@@ -48,7 +48,7 @@
         android:id="@+id/bt_cadastroValidado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="  Vamos lá!  "
+        android:text="@string/finalizarBotao"
         android:textColor="#FFF"
         android:background="@drawable/btncadastrar"
         android:layout_marginStart="140dp"/>

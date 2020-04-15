@@ -60,11 +60,11 @@ class MainActivityTipoUsuario : AppCompatActivity(), View.OnClickListener {
 
     private fun handleSaveUser3(){
 
-        startActivity(Intent(this, MainActivityCadastroUsuario::class.java))
+        startActivity(Intent(this, MainActivityUsuarioDif::class.java))
     }
 
     private fun handleSaveUser4(){
 
-        startActivity(Intent(this, MainActivityCadastroUsuario::class.java))
+        startActivity(Intent(this, MainActivityUsuarioDif::class.java))
     }
 }

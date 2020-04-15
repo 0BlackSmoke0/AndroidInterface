@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastre sua senha"
+        android:text="@string/senhaTextoPrincipal"
         android:textSize="20sp"
         android:fontFamily="@font/exo_2_semibold"
         android:textColor="@color/colorPrimary"
@@ -29,7 +29,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crie sua senha:"
+        android:text="@string/senhaCriar"
         android:textSize="15sp"
         android:fontFamily="@font/exo_2_semibold"
         android:textColor="#000"
@@ -41,7 +41,7 @@
         android:layout_width="225dp"
         android:layout_height="40dp"
         android:background="@drawable/inputboard"
-        android:hint="Informe a senha..."
+        android:hint="@string/senhainput"
         android:fontFamily="@font/exo_2"
         android:inputType="textPassword"
         android:textColor="#000"
@@ -52,7 +52,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirme sua senha:"
+        android:text="@string/senhaConfirmar"
         android:textSize="15sp"
         android:fontFamily="@font/exo_2_semibold"
         android:textColor="#000"
@@ -64,7 +64,7 @@
         android:layout_width="225dp"
         android:layout_height="40dp"
         android:background="@drawable/inputboard"
-        android:hint="Informe a senha..."
+        android:hint="@string/senhainput"
         android:fontFamily="@font/exo_2"
         android:inputType="textPassword"
         android:textColor="#000"
@@ -74,13 +74,12 @@
 
     <Button
         android:id="@+id/bt_validarSenha"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="  Finalizar Cadastro  "
+        android:text="@string/senhaFinalizar"
         android:background="@drawable/btncadastrar"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/exo_2"
-        android:textSize="15sp"
         android:textColor="#FFF"/>
 
 

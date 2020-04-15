@@ -26,7 +26,7 @@
             android:layout_marginLeft="80dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/exo_2_semibold"
-            android:text="Informações residênciais"
+            android:text="@string/residenciaTextoPrincipal"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp" />
 
@@ -36,15 +36,41 @@
             android:layout_marginLeft="80dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/exo_2"
-            android:text="Informe os dados a seguir."
+            android:text="@string/residenciaTextoSecundario"
             android:textColor="#000"
             android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/residenciaCEP"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/input_cep_usuario"
+            android:layout_width="225dp"
+            android:layout_height="40dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:hint="@string/inputPadrão"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"/>
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/exo_2"
-            android:text="Rua:"
+            android:text="@string/residenciaRua"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
@@ -57,7 +83,7 @@
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
             android:inputType="textEmailAddress"
-            android:hint=".   .   ."
+            android:hint="@string/inputPadrão"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
@@ -67,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/exo_2"
-            android:text="Bairro:"
+            android:text="@string/residenciaBairro"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
@@ -80,7 +106,7 @@
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
             android:inputType="textEmailAddress"
-            android:hint=".   .   ."
+            android:hint="@string/inputPadrão"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
@@ -92,7 +118,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/exo_2"
-            android:text="Cidade:"
+            android:text="@string/residenciaCidade"
             android:textColor="#000"
             android:textSize="15sp" />
 
@@ -103,7 +129,7 @@
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
             android:inputType="textEmailAddress"
-            android:hint=".   .   ."
+            android:hint="@string/inputPadrão"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
@@ -114,7 +140,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/exo_2"
-            android:text="Estado:"
+            android:text="@string/residenciaEstado"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
@@ -129,31 +155,7 @@
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
             android:inputType="textEmailAddress"
-            android:hint=".   .   ."
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/exo_2"
-            android:text="CEP:"
-            android:textColor="#000"
-            android:textSize="15sp" />
-
-
-        <EditText
-            android:id="@+id/input_cep_usuario"
-            android:layout_width="225dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:fontFamily="@font/exo_2"
-            android:hint=".   .   ."
-            android:inputType="textEmailAddress"
+            android:hint="@string/inputPadrão"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
@@ -163,7 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/exo_2"
-            android:text="País:"
+            android:text="@string/residenciaPais"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
@@ -175,7 +177,7 @@
             android:layout_height="40dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
-            android:hint=".   .   ."
+            android:hint="@string/inputPadrão"
             android:inputType="textEmailAddress"
             android:textColor="#000"
             android:textSize="15sp"

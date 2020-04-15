@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivityFinalzarCad"/>
+        <activity android:name=".MainActivityUsuarioDif"></activity>
+        <activity android:name=".MainActivityFinalzarCad" />
         <activity android:name=".MainActivityCadastroSenha" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".SplashActivity">
