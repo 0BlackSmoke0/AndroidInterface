@@ -88,7 +88,7 @@
         <item>G-Miligramas</item>
         <item>KG-Kilogramas</item>
     </string-array>
-
+    <!--Organização para fazer a internacionalização do app (i18n) -->
     <!--String's dos textos da aplicação -->
     <!--Textos Universais das telas -->
     <string name="menuPrincipal">Menu</string>
@@ -106,6 +106,8 @@
     <string name="inputPadrão">Informe...</string>
     <string name="inputData">dia/mês/ano</string>
     <string name="inputEmail">exemplo@exemplo.com</string>
+    <string name="SpinnerSeletor">Selecione...</string>
+
     <!--Cadastro de Colheita -->
     <string name="textoPrincipalColheita">Cadastro de colheita</string>
     <string name="textoPlantacaoColetadaColheita">Plantação coletada:</string>
@@ -165,7 +167,7 @@
     <string name="talhaoQuantidadeRuas">Quantidade de ruas:</string>
     <!--Cadastro Usuário -->
     <string name="usuarioTextoPrincipal">Cadastro de usuário</string>
-    <string name="usuarioTextoSecundario">informe as informações a seguir.</string>
+    <string name="usuarioTextoSecundario">informe a seguir.</string>
     <string name="usuarioNome">Nome completo:</string>
     <string name="usuarioNascimento">Data de nascimento:</string>
     <string name="usuarioSexo">Sexo:</string>

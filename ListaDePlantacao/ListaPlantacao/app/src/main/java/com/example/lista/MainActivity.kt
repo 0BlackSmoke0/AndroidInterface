@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         list.add(Model("03- Plantação de batata", "", R.drawable.batata))
 
 
-        listView.adapter = MyAdapter(this, R.layout.linha, list)
+        listView.adapter = MyAdapter(this, R.layout.activity_main, list)
 
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position:Int, id:Long ->
             if (position == 0){

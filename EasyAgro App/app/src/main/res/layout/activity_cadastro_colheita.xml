@@ -45,7 +45,8 @@
             android:text="@string/menuFixoGrafico"
             android:fontFamily="@font/exo_2_semibold"
             android:textColor="#FFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/link_menuColheita"
