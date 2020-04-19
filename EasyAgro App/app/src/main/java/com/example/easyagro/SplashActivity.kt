@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_tela1)
 
-        if(supportActionBar != null){
+        if (supportActionBar != null) {
 
             supportActionBar!!.hide()
         }
@@ -28,18 +28,18 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
         val id = view.id
         if (id == R.id.btnCad) {
             handleSave()
-        }else{
+        } else {
             (id == R.id.btLogin)
             handleSave1()
         }
     }
 
-    private fun handleSave(){
+    private fun handleSave() {
 
         startActivity(Intent(this, MainActivityTipoUsuario::class.java))
     }
 
-    private fun handleSave1(){
+    private fun handleSave1() {
 
         startActivity(Intent(this, Main2Activity::class.java))
     }

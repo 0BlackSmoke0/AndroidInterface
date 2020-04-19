@@ -12,13 +12,14 @@ class Main2Activity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        if(supportActionBar != null){
+        if (supportActionBar != null) {
             supportActionBar!!.hide()
         }
 
         btn_login.setOnClickListener(this)
 
     }
+
     override fun onClick(view: View) {
 
         val id = view.id
@@ -26,8 +27,9 @@ class Main2Activity : AppCompatActivity(), View.OnClickListener {
             handleSave2()
         }
     }
-        private fun handleSave2(){
-            startActivity(Intent(this, MainActivity::class.java))
-        }
 
+    private fun handleSave2() {
+        startActivity(Intent(this, MainActivity::class.java))
     }
+
+}

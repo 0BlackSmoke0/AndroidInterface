@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivityUsuarioDif"></activity>
+        <activity android:name=".MainActivityListaPlantacao"></activity>
+        <activity android:name=".MainActivityLista_insumo" />
+        <activity android:name=".MainActivityUsuarioDif" />
         <activity android:name=".MainActivityFinalzarCad" />
         <activity android:name=".MainActivityCadastroSenha" />
         <activity android:name=".Main2Activity" />

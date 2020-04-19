@@ -10,7 +10,7 @@ class MainActivityCadastroCultura : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_cultura)
 
-        if(supportActionBar != null){
+        if (supportActionBar != null) {
 
             supportActionBar!!.hide()
         }

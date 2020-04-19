@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivityCadastroCultura">
 
-<!--Menu fixo -->
+    <!--Menu fixo -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -18,299 +17,299 @@
             android:id="@+id/link_cadastroCultura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginStart="40dp"
-            android:text="@string/menuFixoCadastrar"
+            android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
+            android:text="@string/menuFixoCadastrar"
             android:textColor="#FFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/link_listaCultura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginStart="20dp"
-            android:text="@string/menuFixoLista"
+            android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
+            android:text="@string/menuFixoLista"
             android:textColor="#FFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/link_graficoCultura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginStart="20dp"
-            android:text="@string/menuFixoGrafico"
+            android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
+            android:text="@string/menuFixoGrafico"
             android:textColor="#FFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/link_menuCultura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="3dp"
-            android:textColor="#FFF"
+            android:layout_marginRight="10dp"
+            android:rotation="@android:integer/status_bar_notification_info_maxnum"
             android:text="°°°"
-            android:textSize="20sp"
-            android:rotation="@android:integer/status_bar_notification_info_maxnum"/>
+            android:textColor="#FFF"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
-<!--Rolagem de tela -->
+    <!--Rolagem de tela -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-<!--LinearLayout principal -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/faixa_cultura"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="@drawable/faixa"
-            android:theme="@style/AppTheme"
-            android:layout_marginBottom="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="@string/culturaTextoPrincipal"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20sp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="80dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="@string/culturaNome"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <EditText
-            android:id="@+id/input_nome_cultura"
-            android:layout_width="225dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:hint="@string/culturaInputNome"
-            android:fontFamily="@font/exo_2"
-            android:inputType="textEmailAddress"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="@string/culturaTipo"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <Spinner
-            android:id="@+id/input_maturacao_cultura"
-            android:layout_width="225dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:drawSelectorOnTop="true"
-            android:entries="@array/array_tipo"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="@string/culturaUnidadeVenda"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <Spinner
-            android:id="@+id/input_uni_vendas_cultura"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:drawSelectorOnTop="true"
-            android:entries="@array/array_uni_venda"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="@string/culturaRegacaoRecomendada"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-        <!--input regação recomendada -->
+        <!--LinearLayout principal -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/input_regacao_recomendada"
-                android:layout_width="45dp"
-                android:layout_height="40dp"
-                android:background="@drawable/inputboard"
-                android:fontFamily="@font/exo_2"
-                android:inputType="number"
-                android:hint=" .  .  ."
-                android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="70dp"/>
+            <ImageView
+                android:id="@+id/faixa_cultura"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/faixa"
+                android:theme="@style/AppTheme" />
 
-            <Spinner
-                android:id="@+id/input_quant_agua_rec"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:background="@drawable/inputboard"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_quant_agua_aplicada"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="7dp"/>
-        </LinearLayout>
-        <!--Campo espaço recomendado -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="@string/culturaEspacamentoRecomendado"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-        <!--input espaçamento recomendado -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/input_espaço_rec"
-                android:layout_width="45dp"
-                android:layout_height="40dp"
-                android:background="@drawable/inputboard"
-                android:fontFamily="@font/exo_2"
-                android:inputType="number"
-                android:hint=" .  .  ."
-                android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="70dp"/>
-
-            <Spinner
-                android:id="@+id/input_esp_rec"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:background="@drawable/inputboard"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_area"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="7dp"/>
-        </LinearLayout>
-        <!--Campos e inputs "Preço unitario e tempo de maturação" -->
-        <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="@string/culturaPrecoUnitario"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <EditText
-            android:id="@+id/input_preco_uni"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:fontFamily="@font/exo_2"
-            android:hint="R$/$"
-            android:inputType="numberDecimal"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="@string/culturaTempoMaturacao"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-
-        <Spinner
-            android:id="@+id/input_tempo_maturacao"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:drawSelectorOnTop="true"
-            android:entries="@array/array_name"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-</LinearLayout>
-        <!--Botões Cadastrar e Cancelar -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
-
-            <Button
-                android:id="@+id/cadastrar_cultuta"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btn"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/exo_2"
-                android:text="@string/botaoCadastrar"
-                android:textColor="#FFF"
+                android:text="@string/culturaTextoPrincipal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/culturaNome"
+                android:textColor="#000"
+                android:textSize="15sp" />
 
-            <Button
-                android:id="@+id/cancelar_cultuta"
+            <EditText
+                android:id="@+id/input_nome_cultura"
+                android:layout_width="225dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:hint="@string/culturaInputNome"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btncancelar"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
                 android:fontFamily="@font/exo_2"
-                android:text="@string/botaoCancelar"
-                android:textColor="#FFF"
-                android:layout_marginLeft="50dp"
-                android:layout_marginBottom="10dp"/>
+                android:text="@string/culturaTipo"
+                android:textColor="#000"
+                android:textSize="15sp" />
 
+            <Spinner
+                android:id="@+id/input_maturacao_cultura"
+                android:layout_width="225dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputboard"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_tipo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/culturaUnidadeVenda"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/input_uni_vendas_cultura"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputboard"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_uni_venda" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/culturaRegacaoRecomendada"
+                android:textColor="#000"
+                android:textSize="15sp" />
+            <!--input regação recomendada -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_regacao_recomendada"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:fontFamily="@font/exo_2"
+                    android:hint=" .  .  ."
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/input_quant_agua_rec"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_quant_agua_aplicada" />
+            </LinearLayout>
+            <!--Campo espaço recomendado -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/culturaEspacamentoRecomendado"
+                android:textColor="#000"
+                android:textSize="15sp" />
+            <!--input espaçamento recomendado -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_espaço_rec"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:fontFamily="@font/exo_2"
+                    android:hint=" .  .  ."
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/input_esp_rec"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_area" />
+            </LinearLayout>
+            <!--Campos e inputs "Preço unitario e tempo de maturação" -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/exo_2"
+                    android:text="@string/culturaPrecoUnitario"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/input_preco_uni"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:fontFamily="@font/exo_2"
+                    android:hint="R$/$"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/exo_2"
+                    android:text="@string/culturaTempoMaturacao"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <Spinner
+                    android:id="@+id/input_tempo_maturacao"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name" />
+
+            </LinearLayout>
+            <!--Botões Cadastrar e Cancelar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cadastrar_cultuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn"
+                    android:fontFamily="@font/exo_2"
+                    android:text="@string/botaoCadastrar"
+                    android:textColor="#FFF" />
+
+                <Button
+                    android:id="@+id/cancelar_cultuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btncancelar"
+                    android:fontFamily="@font/exo_2"
+                    android:text="@string/botaoCancelar"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
         </LinearLayout>
-      </LinearLayout>
     </ScrollView>
 </LinearLayout>
 

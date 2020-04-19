@@ -1,4 +1,5 @@
 package com.example.easyagro
+
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
@@ -8,7 +9,7 @@ class MainActivityCadastroLeilao : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_leilao)
 
-        if(supportActionBar != null){
+        if (supportActionBar != null) {
 
             supportActionBar!!.hide()
         }

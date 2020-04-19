@@ -48,22 +48,22 @@ class MainActivityTipoUsuario : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun handleSaveUser1(){
+    private fun handleSaveUser1() {
 
         startActivity(Intent(this, MainActivityCadastroUsuario::class.java))
     }
 
-    private fun handleSaveUser2(){
+    private fun handleSaveUser2() {
 
         startActivity(Intent(this, MainActivityCadastroUsuario::class.java))
     }
 
-    private fun handleSaveUser3(){
+    private fun handleSaveUser3() {
 
         startActivity(Intent(this, MainActivityUsuarioDif::class.java))
     }
 
-    private fun handleSaveUser4(){
+    private fun handleSaveUser4() {
 
         startActivity(Intent(this, MainActivityUsuarioDif::class.java))
     }

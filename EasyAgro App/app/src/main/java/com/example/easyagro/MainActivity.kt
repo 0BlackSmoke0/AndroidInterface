@@ -9,12 +9,12 @@ import kotlinx.android.synthetic.main.activity_menu_principal.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_principal)
 
-        if(supportActionBar != null){
+        if (supportActionBar != null) {
 
             supportActionBar!!.hide()
         }
@@ -34,54 +34,54 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             handleSave()
         }
 
-        if (id == R.id.bt_cultura){
+        if (id == R.id.bt_cultura) {
             handleSave1()
         }
 
-        if (id == R.id.bt_leilao){
+        if (id == R.id.bt_leilao) {
             handleSave3()
         }
 
-        if (id == R.id.bt_plantacao){
+        if (id == R.id.bt_plantacao) {
             handleSave4()
         }
 
-        if (id == R.id.bt_talhão){
+        if (id == R.id.bt_talhão) {
             handleSave2()
         }
 
-        if (id == R.id.bt_insumo){
+        if (id == R.id.bt_insumo) {
             handleSave5()
         }
     }
 
 
-    private fun handleSave(){
+    private fun handleSave() {
 
         startActivity(Intent(this, MainActivityCadastroColheita::class.java))
     }
 
-    private fun handleSave1(){
+    private fun handleSave1() {
 
         startActivity(Intent(this, MainActivityCadastroCultura::class.java))
     }
 
-    private fun handleSave3(){
+    private fun handleSave3() {
 
         startActivity(Intent(this, MainActivityCadastroLeilao::class.java))
     }
 
-    private fun handleSave4(){
+    private fun handleSave4() {
 
         startActivity(Intent(this, MainActivityCadastroPlantacao::class.java))
     }
 
-    private fun handleSave2(){
+    private fun handleSave2() {
 
         startActivity(Intent(this, MainActivityCadastroTalhao::class.java))
     }
 
-    private fun handleSave5(){
+    private fun handleSave5() {
 
         startActivity(Intent(this, MainActivityCadastroInsumo::class.java))
     }

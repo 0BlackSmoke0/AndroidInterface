@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,14 +10,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <ImageView
             android:id="@+id/faixa"
             android:layout_width="match_parent"
             android:layout_height="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/faixa"
-            android:theme="@style/AppTheme"
-            android:layout_marginBottom="20dp"/>
+            android:theme="@style/AppTheme" />
 
         <TextView
             android:id="@+id/cultura1"
@@ -44,78 +42,78 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/exo_2"
             android:text="@string/usuarioNome"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/input_nome_usuario"
             android:layout_width="225dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
-            android:inputType="textEmailAddress"
             android:hint="@string/inputPadrão"
+            android:inputType="textEmailAddress"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/exo_2"
             android:text="@string/usuarioNascimento"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/input_nasc_usuario"
             android:layout_width="225dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
-            android:inputType="date"
             android:hint="@string/inputData"
+            android:inputType="date"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/exo_2"
             android:text="@string/usuarioSexo"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            android:textSize="15sp" />
 
         <Spinner
             android:id="@+id/planets_uni_vendas"
             android:layout_width="205dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/inputboard"
             android:drawSelectorOnTop="true"
-            android:entries="@array/array_sexo"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            android:entries="@array/array_sexo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/exo_2"
             android:text="@string/usuarioTelefone"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -126,99 +124,94 @@
                 android:id="@+id/input_contato"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/inputboard"
                 android:fontFamily="@font/exo_2"
-                android:inputType="textCapSentences"
                 android:hint="(DD) 0000-0000"
+                android:inputType="textCapSentences"
                 android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="70dp"/>
+                android:textSize="15sp" />
 
             <Spinner
                 android:id="@+id/input_tipo_contato"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/inputboard"
                 android:drawSelectorOnTop="true"
-                android:entries="@array/array_tipo_contato"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="7dp"/>
-
+                android:entries="@array/array_tipo_contato" />
         </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/exo_2"
             android:text="@string/usuarioCPF"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/input_cpf"
             android:layout_width="225dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
             android:hint="000.000.000-00"
             android:inputType="textEmailAddress"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/exo_2"
             android:text="@string/usuarioEmail"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/input_email"
             android:layout_width="225dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
             android:hint="@string/inputEmail"
             android:inputType="textEmailAddress"
             android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-
+            android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/bt_avancatela"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/seta2"
-                android:fontFamily="@font/exo_2"
                 android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/seta2"
+                android:fontFamily="@font/exo_2" />
 
             <Button
                 android:id="@+id/bt_voltartela"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/seta"
                 android:layout_marginLeft="125dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/seta" />
 
         </LinearLayout>
 

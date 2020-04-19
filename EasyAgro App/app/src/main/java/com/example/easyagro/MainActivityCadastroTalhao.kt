@@ -1,5 +1,3 @@
-
-
 package com.example.easyagro
 
 import android.os.Bundle
@@ -11,7 +9,7 @@ class MainActivityCadastroTalhao : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_talhao)
 
-        if(supportActionBar != null){
+        if (supportActionBar != null) {
 
             supportActionBar!!.hide()
         }
