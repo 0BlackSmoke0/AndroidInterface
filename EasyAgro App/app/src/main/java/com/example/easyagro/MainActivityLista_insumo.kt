@@ -13,12 +13,9 @@ class MainActivityLista_insumo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_lista_insumo)
 
-
         if (supportActionBar != null) {
-
             supportActionBar!!.hide()
         }
-
 
         var listView = findViewById<ListView>(R.id.listView)
         var list = mutableListOf<Model>()
@@ -29,9 +26,10 @@ class MainActivityLista_insumo : AppCompatActivity() {
         list.add(Model("Insumo 4", "Descrição do insumo 4..", R.drawable.insumoscolorlista))
         list.add(Model("Insumo 5", "Descrição do insumo 5..", R.drawable.insumoscolorlista))
 
-        listView.adapter = MyAdapter(this, R.layout.linha_insumo, list)
+        listView.adapter = MyAdapterInsumo(this, R.layout.linha_insumo, list)
 
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
+
             if (position == 0) {
                 Toast.makeText(this@MainActivityLista_insumo, "Clicar em insumo 1!", Toast.LENGTH_LONG).show()
             }

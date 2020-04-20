@@ -11,7 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivityListaPlantacao"></activity>
+        <activity android:name=".MainActivityListaLeilao"></activity>
+        <activity android:name=".MainActivityListaColheita" />
+        <activity android:name=".MainActivityListaTalhao" />
+        <activity android:name=".MainActivityListaCultura" />
+        <activity android:name=".MainActivityListaPlantacao" />
         <activity android:name=".MainActivityLista_insumo" />
         <activity android:name=".MainActivityUsuarioDif" />
         <activity android:name=".MainActivityFinalzarCad" />
