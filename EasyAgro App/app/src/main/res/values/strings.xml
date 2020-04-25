@@ -1,15 +1,7 @@
 <resources>
     <string name="app_name">EasyAgro</string>
     <!--String's dos Spinner's -->
-    <string-array name="array_name">
-        <item>Selecione...</item>
-        <item>2-3 semanas</item>
-        <item>3-6 semanas</item>
-        <item>6-12 semanas</item>
-        <item>1-3 meses</item>
-        <item>4-8 meses</item>
-        <item>8-12 meses</item>
-    </string-array>
+
     <string-array name="array_regaçao">
         <item>Selecione...</item>
         <item>100 a 300ml a cada 5h</item>
@@ -108,6 +100,8 @@
     <string name="inputEmail">exemplo@exemplo.com</string>
     <string name="SpinnerSeletor">Selecione...</string>
 
+
+
     <!--Cadastro de Colheita -->
     <string name="textoPrincipalColheita">Cadastro de colheita</string>
     <string name="textoPlantacaoColetadaColheita">Plantação coletada:</string>
@@ -121,12 +115,23 @@
     <string name="culturaTextoPrincipal">Cadastro de cultura</string>
     <string name="culturaNome">Nome da cultura:</string>
     <string name="culturaInputNome">Informe a cultura...</string>
+    <string name="culturaInputTipo">Informe o tipo da cultura...</string>
+    <string name="culturaEstado">Estado da cultura:</string>
     <string name="culturaTipo">Tipo da cultura:</string>
     <string name="culturaUnidadeVenda">Unidade de venda:</string>
     <string name="culturaRegacaoRecomendada">Regação recomendada:</string>
     <string name="culturaEspacamentoRecomendado">Espaçamento recomendado:</string>
     <string name="culturaPrecoUnitario">Preço unitario:</string>
-    <string name="culturaTempoMaturacao">Tempo de maturação:</string>
+    <string name="culturaTempoMaturacao">Tempo de maturação (em dias):</string>
+    <string name="insumoEmCultura">Quantidade recomendada de insumo para a cultura cadastrada:</string>
+    <string name="qtd_atual_materiaPrima">Quantidade atual de matéria prima:</string>
+    <string name="materiaPrima">Matéria prima:</string>
+    <string name="produtoAcabado">Produto acabado:</string>
+    <string name="culturaPrecoUnitarioVenda">Preço unitário de venda:</string>
+    <string name="uni_venda_cultura">Unidade de venda:</string>
+
+
+    uni_venda_cultura
     <!--Cadstro de Insumos -->
     <string name="insumoTextoPrincipal">Cadastro de insumos</string>
     <string name="insumoNome">Nome do insumos:</string>

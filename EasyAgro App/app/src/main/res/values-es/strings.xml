@@ -31,7 +31,7 @@
     <string name="insumoQuantidadeRecomendada">"Cantidad recomendada: "</string>
     <string name="insumoTempoAcao">Tiempo de acción:</string>
     <string name="insumoTextoPrincipal">Registro de insumo</string>
-    <string name="insumoTipo">Tipo de isumo:</string>
+    <string name="insumoTipo">Tipo de insumo:</string>
     <string name="insumoVolumeRecipiente">" Volumen del contenedor:"</string>
     <string name="leilaoDataConsumo">" Fecha de consumo:"</string>
     <string name="leilaoPrecolote">"Precio del lote: "</string>
@@ -106,4 +106,12 @@
     <string name="usuarioTelefone">" Teléfono:"</string>
     <string name="usuarioTextoPrincipal">Registro de usuario</string>
     <string name="usuarioTextoSecundario">informe a continuación.</string>
+    <string name="culturaEstado">Estado de la cultura</string>
+    <string name="culturaInputTipo">Informar el tipo de cultura</string>
+    <string name="insumoEmCultura">Cantidad recomendada de insumo para el cultura registrada</string>
+    <string name="qtd_atual_materiaPrima">Cantidad actual de materia prima:</string>
+    <string name="materiaPrima">Materia prima:</string>
+    <string name="produtoAcabado">Producto terminado:</string>
+    <string name="culturaPrecoUnitarioVenda">Precio de venta unitario:</string>
+    <string name="uni_venda_cultura">Unidad de ventas:</string>
 </resources>
