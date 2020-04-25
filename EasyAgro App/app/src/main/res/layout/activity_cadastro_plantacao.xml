@@ -117,29 +117,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/exo_2"
-            android:text="Previsão de colheita:"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <EditText
-            android:id="@+id/input_data_previsao_colheita_plantacao"
-            android:layout_width="225dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:fontFamily="@font/exo_2"
-            android:inputType="date"
-            android:textColor="#000"
-            android:hint="dia/mês/ano"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
             android:text="Selecione a cultura:"
             android:textColor="#000"
             android:textSize="15sp"
@@ -283,37 +260,7 @@
                 android:layout_marginLeft="7dp"/>
 
         </LinearLayout>
-<!--Campo e input custo da plantação -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/exo_2"
-                android:text="Custo da plantação:"
-                android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="70dp"/>
-
-
-            <EditText
-                android:id="@+id/input_custo_plantacao"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:background="@drawable/inputboard"
-                android:fontFamily="@font/exo_2"
-                android:inputType="numberDecimal"
-                android:hint="R$"
-                android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="70dp"/>
-
-        </LinearLayout>
 <!--Botões Cadastrar e Cancelar -->
         <LinearLayout
             android:layout_width="match_parent"
