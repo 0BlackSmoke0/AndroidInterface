@@ -1,87 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivityCadastroSenha"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivityCadastroSenha">
 
     <ImageView
         android:id="@+id/faixa"
         android:layout_width="match_parent"
         android:layout_height="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/faixa"
-        android:theme="@style/AppTheme"
-        android:layout_marginBottom="20dp"/>
+        android:theme="@style/AppTheme" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastre sua senha"
-        android:textSize="20sp"
-        android:fontFamily="@font/exo_2_semibold"
-        android:textColor="@color/colorPrimary"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="110dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/exo_2_semibold"
+        android:text="@string/senhaTextoPrincipal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crie sua senha:"
-        android:textSize="15sp"
-        android:fontFamily="@font/exo_2_semibold"
-        android:textColor="#000"
         android:layout_marginStart="70dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/exo_2_semibold"
+        android:text="@string/senhaCriar"
+        android:textColor="#000"
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/input_cadastro_senha"
         android:layout_width="225dp"
         android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/inputboard"
-        android:hint="Informe a senha..."
         android:fontFamily="@font/exo_2"
+        android:hint="@string/senhainput"
         android:inputType="textPassword"
         android:textColor="#000"
-        android:textSize="15sp"
-        android:layout_marginStart="70dp"
-        android:layout_marginBottom="10dp"/>
+        android:textSize="15sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirme sua senha:"
-        android:textSize="15sp"
-        android:fontFamily="@font/exo_2_semibold"
-        android:textColor="#000"
         android:layout_marginStart="70dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/exo_2_semibold"
+        android:text="@string/senhaConfirmar"
+        android:textColor="#000"
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/input_confirma_senha"
         android:layout_width="225dp"
         android:layout_height="40dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/inputboard"
-        android:hint="Informe a senha..."
         android:fontFamily="@font/exo_2"
+        android:hint="@string/senhainput"
         android:inputType="textPassword"
         android:textColor="#000"
-        android:textSize="15sp"
-        android:layout_marginStart="70dp"
-        android:layout_marginBottom="30dp"/>
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/bt_validarSenha"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="  Finalizar Cadastro  "
-        android:background="@drawable/btncadastrar"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/btncadastrar"
         android:fontFamily="@font/exo_2"
-        android:textSize="15sp"
-        android:textColor="#FFF"/>
+        android:text="@string/senhaFinalizar"
+        android:textColor="#FFF" />
 
 
 </LinearLayout>

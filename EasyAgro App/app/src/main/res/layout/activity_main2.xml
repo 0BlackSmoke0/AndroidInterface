@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity"
-    android:background="@drawable/tlog">
+    android:background="@drawable/tlog"
+    tools:context=".Main2Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,65 +17,67 @@
             android:layout_width="wrap_content"
             android:layout_height="102dp"
             android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/logotech"
             android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/logotech"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Insira suas credenciais"
-            android:textSize="20dp"
-            android:fontFamily="@font/exo_2_semibold"
-            android:textColor="#000"
             android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/exo_2_semibold"
+            android:text="@string/loginTextoPrincipal"
+            android:textColor="#000"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email:"
+            android:layout_marginLeft="40dp"
             android:fontFamily="@font/exo_2_semibold"
-            android:textSize="15sp"
+            android:text="@string/loginEmail"
             android:textColor="#000"
-            android:layout_marginLeft="40dp"/>
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/inputboard"
-            android:inputType="textEmailAddress"
-            android:fontFamily="@font/exo_2"
-            android:textColor="#000"
-            android:selectAllOnFocus="true"
-            tools:ignore="MissingConstraints"
             android:layout_marginLeft="40dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/inputboard"
+            android:fontFamily="@font/exo_2"
+            android:hint="@string/loginInputE"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            android:textColor="#000"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/text_senha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Senha:"
-            android:textColor="#000"
-            android:textSize="15sp"
+            android:layout_marginLeft="40dp"
             android:fontFamily="@font/exo_2_semibold"
-            android:layout_marginLeft="40dp"/>
+            android:text="@string/loginSenha"
+            android:textColor="#000"
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:imeOptions="actionDone"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
+            android:hint="@string/loginInputS"
+            android:imeOptions="actionDone"
             android:inputType="textPassword"
-            android:selectAllOnFocus="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="20dp"/>
+            android:selectAllOnFocus="true" />
 
         <Button
             android:id="@+id/btn_login"
@@ -83,8 +85,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
             android:background="@drawable/btncadastrar"
-            android:text="Entrar"
-            android:textColor="#FFF"/>
+            android:text="@string/loginBotao"
+            android:textColor="#FFF" />
 
     </LinearLayout>
 

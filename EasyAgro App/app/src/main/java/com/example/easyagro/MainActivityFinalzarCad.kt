@@ -1,9 +1,9 @@
 package com.example.easyagro
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main_finalzar_cad.*
 
 class MainActivityFinalzarCad : AppCompatActivity(), View.OnClickListener {
@@ -13,7 +13,7 @@ class MainActivityFinalzarCad : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_finalzar_cad)
 
-        if(supportActionBar != null){
+        if (supportActionBar != null) {
             supportActionBar!!.hide()
         }
 
@@ -28,7 +28,7 @@ class MainActivityFinalzarCad : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun handleSaveValidado(){
-        startActivity(Intent(this,Main2Activity::class.java))
+    private fun handleSaveValidado() {
+        startActivity(Intent(this, Main2Activity::class.java))
     }
 }

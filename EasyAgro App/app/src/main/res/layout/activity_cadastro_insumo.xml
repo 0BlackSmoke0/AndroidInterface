@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivityCadastroInsumo">
 
-<!-- Menu fixo -->
+    <!-- Menu fixo -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -18,50 +17,50 @@
             android:id="@+id/link_cadastroInsumo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginStart="40dp"
-            android:text="Cadastro"
+            android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
-            android:textColor="#FFF"
-            android:textSize="20sp"/>
+            android:text="@string/menuFixoCadastrar"
+            android:textColor="#BF3F51B5"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/link_listaInsumo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginStart="20dp"
-            android:text="Lista"
+            android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
+            android:text="@string/menuFixoLista"
             android:textColor="#FFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/link_graficoInsumo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginStart="20dp"
-            android:text="Gráfico"
+            android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
+            android:text="@string/menuFixoGrafico"
             android:textColor="#FFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/link_menuInsumo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="3dp"
-            android:textColor="#FFF"
+            android:layout_marginRight="10dp"
+            android:rotation="@android:integer/status_bar_notification_info_maxnum"
             android:text="°°°"
-            android:textSize="20sp"
-            android:rotation="@android:integer/status_bar_notification_info_maxnum"/>
+            android:textColor="#FFF"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
-<!--Rolagem de tela -->
+    <!--Rolagem de tela -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -86,7 +85,11 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/exo_2_semibold"
+<<<<<<< HEAD
                 android:text="Cadastro de insumos"
+=======
+                android:text="@string/insumoTextoPrincipal"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
 
@@ -97,7 +100,11 @@
                 android:layout_marginLeft="70dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                 android:text="Nome do insumo:"
+=======
+                android:text="@string/insumoNome"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                 android:textColor="#000"
                 android:textSize="15sp" />
 
@@ -110,7 +117,11 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/inputboard"
                 android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                 android:hint="Informe o insumo..."
+=======
+                android:hint="@string/insumoInput"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                 android:inputType="textEmailAddress"
                 android:textColor="#000"
                 android:textSize="15sp" />
@@ -121,7 +132,11 @@
                 android:layout_marginLeft="70dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                 android:text="Tipo do insumo:"
+=======
+                android:text="@string/insumoTipo"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                 android:textColor="#000"
                 android:textSize="15sp" />
 
@@ -141,7 +156,11 @@
                 android:layout_marginLeft="70dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                 android:text="Tempo de ação:"
+=======
+                android:text="@string/insumoTempoAcao"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                 android:textColor="#000"
                 android:textSize="15sp" />
             <!--inputs "Tempo de ação, " -->
@@ -186,7 +205,11 @@
                     android:layout_marginLeft="70dp"
                     android:layout_marginBottom="10dp"
                     android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                     android:text="Quantidade recomendada:"
+=======
+                    android:text="@string/insumoQuantidadeRecomendada"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                     android:textColor="#000"
                     android:textSize="15sp" />
 
@@ -223,8 +246,13 @@
             </LinearLayout>
             <!--Campos e inputs "Preço e volume do recipiente" -->
             <LinearLayout
+<<<<<<< HEAD
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+=======
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                 android:orientation="vertical">
 
                 <TextView
@@ -233,7 +261,11 @@
                     android:layout_marginLeft="70dp"
                     android:layout_marginBottom="10dp"
                     android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                     android:text="Preço:"
+=======
+                    android:text="@string/insumoPreco"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                     android:textColor="#000"
                     android:textSize="15sp" />
 
@@ -252,18 +284,22 @@
                     android:textSize="15sp" />
 
 
+<<<<<<< HEAD
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+=======
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
                     android:layout_marginBottom="10dp"
                     android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                     android:text="Volume do recipiente:"
                     android:textColor="#000"
                     android:textSize="15sp" />
@@ -297,6 +333,22 @@
 
 
                 </LinearLayout>
+=======
+                    android:text="@string/insumoVolumeRecipiente"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/input_insumo_uni_vendas"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_uni_venda" />
+
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
 
             </LinearLayout>
             <!--Botões Cadastrar e Cancelar -->
@@ -314,7 +366,11 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/btn"
                     android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                     android:text="Cadastrar"
+=======
+                    android:text="@string/botaoCadastrar"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                     android:textColor="#FFF" />
 
                 <Button
@@ -325,7 +381,11 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/btncancelar"
                     android:fontFamily="@font/exo_2"
+<<<<<<< HEAD
                     android:text="cancelar"
+=======
+                    android:text="@string/botaoCancelar"
+>>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
                     android:textColor="#FFF" />
 
             </LinearLayout>

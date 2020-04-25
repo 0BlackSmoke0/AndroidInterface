@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,63 +14,63 @@
             android:id="@+id/faixa_ou"
             android:layout_width="match_parent"
             android:layout_height="20sp"
+            android:layout_marginBottom="80dp"
             android:background="@drawable/faixa"
-            android:theme="@style/AppTheme"
-            android:layout_marginBottom="80dp"/>
+            android:theme="@style/AppTheme" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Você se encaixa em qual perfil?"
-            android:fontFamily="@font/exo_2_semibold"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:layout_marginBottom="40dp" />
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/exo_2_semibold"
+            android:text="@string/tipoUsuarioTextoPrincipal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/bt_gerenciar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Gerenciar somente minha plantação"
-            android:textColor="#FFF"
-            android:fontFamily="@font/exo_2"
-            android:background="@drawable/btncadastrar"
+            android:layout_marginLeft="30dp"
             android:layout_marginBottom="30dp"
-            android:layout_marginLeft="30dp"/>
+            android:background="@drawable/btncadastrar"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/tipoUsuario1"
+            android:textColor="#FFF" />
 
         <Button
             android:id="@+id/bt_ger_lei"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Gerenciar minha plantação e leiloar"
-            android:textColor="#FFF"
-            android:fontFamily="@font/exo_2"
-            android:background="@drawable/btncadastrar"
+            android:layout_marginLeft="30dp"
             android:layout_marginBottom="30dp"
-            android:layout_marginLeft="30dp"/>
+            android:background="@drawable/btncadastrar"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/tipoUsuario2"
+            android:textColor="#FFF" />
 
         <Button
             android:id="@+id/bt_leiloar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Apenas leiloar"
-            android:textColor="#FFF"
-            android:fontFamily="@font/exo_2"
-            android:background="@drawable/btncadastrar"
+            android:layout_marginLeft="30dp"
             android:layout_marginBottom="30dp"
-            android:layout_marginLeft="30dp"/>
+            android:background="@drawable/btncadastrar"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/tipoUsuario3"
+            android:textColor="#FFF" />
 
         <Button
             android:id="@+id/bt_negociar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Apenas negociar"
-            android:textColor="#FFF"
-            android:fontFamily="@font/exo_2"
-            android:background="@drawable/btncadastrar"
+            android:layout_marginLeft="30dp"
             android:layout_marginBottom="30dp"
-            android:layout_marginLeft="30dp"/>
+            android:background="@drawable/btncadastrar"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/tipoUsuario4"
+            android:textColor="#FFF" />
 
     </LinearLayout>
 </ScrollView>

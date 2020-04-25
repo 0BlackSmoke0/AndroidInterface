@@ -1,120 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginTop="10dp">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Menu"
-        android:textColor="@color/colorPrimary"
-        android:fontFamily="@font/exo_2_semibold"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/exo_2_semibold"
+            android:text="@string/menuPrincipal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/bt_cultura"
-            android:layout_width="152dp"
-            android:layout_height="138dp"
-            android:background="@drawable/bt_menu_inicial"
-            android:drawableTop="@drawable/cultura"
-            android:text="cultura"
-            android:textSize="15sp"
-            android:fontFamily="@font/exo_2"
-            android:textColor="#000000"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/bt_talhão"
-            android:layout_width="152dp"
-            android:layout_height="138dp"
-            android:background="@drawable/bt_menu_inicial"
-            android:drawableTop="@drawable/talhao"
-            android:text="talhão"
-            android:textSize="15sp"
-            android:fontFamily="@font/exo_2"
-            android:textColor="#000000" />
+            <Button
+                android:id="@+id/bt_cultura"
+                android:layout_width="152dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bt_menu_inicial"
+                android:drawableTop="@drawable/cultura"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/botaoCultura"
+                android:textColor="#000000"
+                android:textSize="15sp" />
 
-</LinearLayout>
+            <Button
+                android:id="@+id/bt_talhão"
+                android:layout_width="152dp"
+                android:layout_height="138dp"
+                android:background="@drawable/bt_menu_inicial"
+                android:drawableTop="@drawable/talhao"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/botaoTalhao"
+                android:textColor="#000000"
+                android:textSize="15sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginBottom="15dp">
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/bt_insumo"
-            android:layout_width="152dp"
-            android:layout_height="138dp"
-            android:background="@drawable/bt_menu_inicial"
-            android:drawableTop="@drawable/insumo"
-            android:text="insumo"
-            android:textSize="15sp"
-            android:fontFamily="@font/exo_2"
-            android:textColor="#000000"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/bt_plantacao"
-            android:layout_width="152dp"
-            android:layout_height="138dp"
-            android:background="@drawable/bt_menu_inicial"
-            android:drawableTop="@drawable/plantacao"
-            android:text="plantação"
-            android:textSize="15sp"
-            android:fontFamily="@font/exo_2"
-            android:textColor="#000000"/>
-    </LinearLayout>
+            <Button
+                android:id="@+id/bt_insumo"
+                android:layout_width="152dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bt_menu_inicial"
+                android:drawableTop="@drawable/insumo"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/botaoInsumo"
+                android:textColor="#000000"
+                android:textSize="15sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_plantacao"
+                android:layout_width="152dp"
+                android:layout_height="138dp"
+                android:background="@drawable/bt_menu_inicial"
+                android:drawableTop="@drawable/plantacao"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/botaoPlantacao"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/bt_colheita"
-        android:layout_width="152dp"
-        android:layout_height="138dp"
-        android:background="@drawable/bt_menu_inicial"
-        android:drawableTop="@drawable/colheita"
-        android:text="Colheita"
-        android:textSize="15sp"
-        android:fontFamily="@font/exo_2"
-        android:textColor="#000000"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/bt_leilao"
-            android:layout_width="152dp"
-            android:layout_height="138dp"
-            android:background="@drawable/bt_menu_inicial"
-            android:drawableTop="@drawable/leilao"
-            android:text="leilão"
-            android:textSize="15sp"
-            android:fontFamily="@font/exo_2"
-            android:textColor="#000000"/>
+            <Button
+                android:id="@+id/bt_colheita"
+                android:layout_width="152dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bt_menu_inicial"
+                android:drawableTop="@drawable/colheita"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/botaoColheita"
+                android:textColor="#000000"
+                android:textSize="15sp" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/bt_leilao"
+                android:layout_width="152dp"
+                android:layout_height="138dp"
+                android:background="@drawable/bt_menu_inicial"
+                android:drawableTop="@drawable/leilao"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/botaoLeilao"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
