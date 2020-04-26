@@ -174,8 +174,7 @@
     <string name="talhaoNome">Nome do talhão:</string>
     <string name="talhaoInput">Informe o talhão...</string>
     <string name="talhaoDisponibilidade">Disponibilidade:</string>
-    <string name="talhaoAreaVertical">Área vertical:</string>
-    <string name="talhaoAreaHorizontal">Área horizontal:</string>
+    <string name="talhaoAreaVertical">Área (em metros):</string>
     <string name="talhaoDistanciaRuas">Distância das ruas:</string>
     <string name="talhaoQuantidadeRuas">Quantidade de ruas:</string>
     <!--Cadastro Usuário -->

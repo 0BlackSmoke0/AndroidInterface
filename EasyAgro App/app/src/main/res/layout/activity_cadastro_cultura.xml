@@ -222,7 +222,7 @@
                 android:background="@drawable/inputboard"
                 android:fontFamily="@font/exo_2"
                 android:hint=""
-                android:inputType="textEmailAddress"
+                android:inputType="number"
                 android:textColor="#000"
                 android:textSize="15sp" />
 

@@ -140,34 +140,54 @@
                 android:text="@string/talhaoAreaVertical"
                 android:textColor="#000"
                 android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/input_area1"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:hint=""
+                android:inputType="number"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
             <!-- input área vertical -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-45dp"
+                android:fontFamily="@font/exo_2"
+                android:text="x"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/input_area2"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="185dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:hint=""
+                android:inputType="number"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/input_area_vertical"
-                    android:layout_width="45dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/inputboard"
-                    android:fontFamily="@font/exo_2"
-                    android:hint=" .  .  ."
-                    android:inputType="number"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
 
-                <Spinner
-                    android:id="@+id/input_area_vertical_talhao"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/inputpeq"
-                    android:drawSelectorOnTop="true"
-                    android:entries="@array/array_area" />
 
             </LinearLayout>
             <!-- Campo área horizontal-->
@@ -176,15 +196,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/exo_2"
-                    android:text="@string/talhaoAreaHorizontal"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
 
             </LinearLayout>
             <!-- input área horizontal-->
@@ -192,29 +203,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/input_area_horizontal"
-                    android:layout_width="45dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/inputboard"
-                    android:fontFamily="@font/exo_2"
-                    android:hint=" .  .  ."
-                    android:inputType="number"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
-
-                <Spinner
-                    android:id="@+id/input_area_horizontal_talhao"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/inputpeq"
-                    android:drawSelectorOnTop="true"
-                    android:entries="@array/array_area" />
 
             </LinearLayout>
             <!-- Campo distância de ruas -->
