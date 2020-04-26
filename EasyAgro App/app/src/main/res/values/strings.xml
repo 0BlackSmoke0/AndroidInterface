@@ -130,7 +130,7 @@
     <string name="culturaRegacaoRecomendada">Regação recomendada:</string>
     <string name="culturaEspacamentoRecomendado">Espaçamento recomendado:</string>
     <string name="culturaPrecoUnitario">Preço unitario:</string>
-    <string name="culturaTempoMaturacao">Tempo de maturação:</string>
+    <string name="culturaTempoMaturacao">Tempo de maturação (em dias):</string>
     <string name="insumoEmCultura">Quantidade recomendada de insumo para a cultura cadastrada:</string>
     <string name="qtd_atual_materiaPrima">Quantidade atual de matéria prima:</string>
     <string name="materiaPrima">Matéria prima:</string>
