@@ -68,68 +68,8 @@
         <!--selecionar insumos aplicados "LinearLayout principal"-->
         <LinearLayout
             android:layout_width="match_parent"
-<<<<<<< HEAD
-            android:layout_height="20dp"
-            android:background="@drawable/faixa"
-            android:theme="@style/AppTheme"
-            android:layout_marginBottom="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cadastro de plantação"
-            android:textSize="20dp"
-            android:fontFamily="@font/exo_2_semibold"
-            android:textColor="@color/colorPrimary"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="Data de criação:"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <EditText
-            android:id="@+id/input_data_criação_plantacao"
-            android:layout_width="225dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:fontFamily="@font/exo_2"
-            android:inputType="date"
-            android:textColor="#000"
-            android:hint="dia/mês/ano"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/exo_2"
-            android:text="Selecione a cultura:"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-
-        <Spinner
-            android:id="@+id/input_selecionar_cultura_plantacao"
-            android:layout_width="225dp"
-            android:layout_height="40dp"
-            android:background="@drawable/inputboard"
-            android:drawSelectorOnTop="true"
-            android:entries="@array/array_padrao"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="70dp"/>
-=======
             android:layout_height="match_parent"
             android:orientation="vertical">
->>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
 
             <ImageView
                 android:id="@+id/faixa"
@@ -235,18 +175,6 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginBottom="10dp"
-<<<<<<< HEAD
-                android:layout_marginLeft="7dp"/>
-
-        </LinearLayout>
-
-<!--Botões Cadastrar e Cancelar -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
-=======
                 android:background="@drawable/inputboard"
                 android:drawSelectorOnTop="true"
                 android:entries="@array/array_padrao" />
@@ -291,7 +219,6 @@
                 android:drawSelectorOnTop="true"
                 android:entries="@array/array_padrao" />
 
->>>>>>> dd3f0302d11e966f3a1d3baf8f31ca197279274d
 
             <TextView
                 android:layout_width="wrap_content"

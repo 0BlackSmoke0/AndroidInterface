@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">EasyAgro</string>
     <!--String's dos Spinner's -->
-
+    <string-array name="array_name">
+        <item>Selecione...</item>
+        <item>2-3 semanas</item>
+        <item>3-6 semanas</item>
+        <item>6-12 semanas</item>
+        <item>1-3 meses</item>
+        <item>4-8 meses</item>
+        <item>8-12 meses</item>
+    </string-array>
     <string-array name="array_regaçao">
         <item>Selecione...</item>
         <item>100 a 300ml a cada 5h</item>
@@ -122,7 +130,7 @@
     <string name="culturaRegacaoRecomendada">Regação recomendada:</string>
     <string name="culturaEspacamentoRecomendado">Espaçamento recomendado:</string>
     <string name="culturaPrecoUnitario">Preço unitario:</string>
-    <string name="culturaTempoMaturacao">Tempo de maturação (em dias):</string>
+    <string name="culturaTempoMaturacao">Tempo de maturação:</string>
     <string name="insumoEmCultura">Quantidade recomendada de insumo para a cultura cadastrada:</string>
     <string name="qtd_atual_materiaPrima">Quantidade atual de matéria prima:</string>
     <string name="materiaPrima">Matéria prima:</string>
