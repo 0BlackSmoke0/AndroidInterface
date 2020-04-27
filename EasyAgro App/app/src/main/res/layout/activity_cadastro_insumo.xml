@@ -177,7 +177,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -224,7 +224,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -236,6 +236,7 @@
                     android:textColor="#000"
                     android:textSize="15sp" />
 
+            </LinearLayout>
 
                 <EditText
                     android:id="@+id/input_preco_insumo"
@@ -251,6 +252,13 @@
                     android:textSize="15sp" />
 
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -261,9 +269,18 @@
                     android:textColor="#000"
                     android:textSize="15sp" />
 
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
                 <Spinner
                     android:id="@+id/input_insumo_uni_vendas"
-                    android:layout_width="150dp"
+                    android:layout_width="80dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginBottom="10dp"
@@ -271,8 +288,21 @@
                     android:drawSelectorOnTop="true"
                     android:entries="@array/array_uni_venda" />
 
-
+                <EditText
+                    android:id="@+id/input_insumo_uni_vendas1"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:fontFamily="@font/exo_2"
+                    android:hint=""
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
             </LinearLayout>
+
+
             <!--Botões Cadastrar e Cancelar -->
             <LinearLayout
                 android:layout_width="match_parent"
