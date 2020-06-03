@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
+
 import kotlinx.android.synthetic.main.activity_cadastro_usuario.*
 
-class MainActivityCadastroUsuario : AppCompatActivity(), View.OnClickListener {
+class MainActivityCadastroUsuario : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,33 +19,17 @@ class MainActivityCadastroUsuario : AppCompatActivity(), View.OnClickListener {
             supportActionBar!!.hide()
         }
 
-        bt_avancatela.setOnClickListener(this)
-        bt_voltartela.setOnClickListener(this)
-
     }
 
-    override fun onClick(view: View) {
+     fun avancarTela(view: View) {
+       val idAvancarTela = Intent(this, MainActivityInfoResidencia::class.java)
+       startActivity(idAvancarTela)
+     }
 
-        val idVol = view.id
-        if (idVol == R.id.bt_voltartela) {
-            handleSaveVol()
+     fun voltarTela(view: View){
+         val idVoltarTela= Intent(this, MainActivityTipoUsuario::class.java)
+         startActivity(idVoltarTela)
         }
 
-        val idAva = view.id
-        if (idAva == R.id.bt_avancatela) {
-            handleSaveAva()
-        }
     }
 
-    private fun handleSaveAva() {
-
-        //Main Activity estão trocadas (Voltar)
-        startActivity(Intent(this, MainActivityTipoUsuario::class.java))
-    }
-
-    private fun handleSaveVol() {
-
-        //Main Activity estão trocadas (Avançar)
-        startActivity(Intent(this, MainActivityInfoResidencia::class.java))
-    }
-}

@@ -20,14 +20,18 @@
         <activity android:name=".MainActivityUsuarioDif" />
         <activity android:name=".MainActivityFinalzarCad" />
         <activity android:name=".MainActivityCadastroSenha" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        <activity android:name=".Main2Activity" >
+
+            <intent-filter>
+                   <action android:name="android.intent.action.MAIN" />
+
+                   <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity android:name=".SplashActivity"/>
         <activity android:name=".MainActivityTipoUsuario" />
         <activity android:name=".MainActivityInfoResidencia" />
         <activity android:name=".MainActivityCadastroUsuario" />

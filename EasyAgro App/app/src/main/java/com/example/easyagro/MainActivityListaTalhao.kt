@@ -1,11 +1,14 @@
 package com.example.easyagro
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
+import com.example.easyagro.Adapter.MyAdapterTalhao
+import com.example.easyagro.R
 
 class MainActivityListaTalhao : AppCompatActivity() {
 
@@ -48,4 +51,13 @@ class MainActivityListaTalhao : AppCompatActivity() {
         }
     }
 
+    fun listaTalhaoCadastro(view: View){
+        val talhaoCadastro = Intent(this, MainActivityCadastroTalhao::class.java)
+        startActivity(talhaoCadastro)
+    }
+
+    fun graficoTalhao(view: View){
+        val mensagem1 = "Tela em construção..."
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.easyagro
+package com.example.easyagro.Adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,16 +8,19 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class MyAdapterColheita(var mCtx: Context, var resources: Int, var items: List<Model>) :
+import com.example.easyagro.Model
+import com.example.easyagro.R
+
+class MyAdapterCultura(var mCtx: Context, var resources: Int, var items: List<Model>) :
     ArrayAdapter<Model>(mCtx, resources, items) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val layoutInflater: LayoutInflater = LayoutInflater.from(mCtx)
         val view: View = layoutInflater.inflate(resources, null)
 
-        val imageView: ImageView = view.findViewById(R.id.colheitaa)
-        val titleTextView: TextView = view.findViewById(R.id.textViewColheita1)
-        val descriptionTextView: TextView = view.findViewById(R.id.textViewColheita2)
+        val imageView: ImageView = view.findViewById(R.id.culturaa)
+        val titleTextView: TextView = view.findViewById(R.id.textViewCultura1)
+        val descriptionTextView: TextView = view.findViewById(R.id.textViewCultura2)
 
         var mItem: Model = items[position]
         imageView.setImageDrawable(mCtx.resources.getDrawable(mItem.img))

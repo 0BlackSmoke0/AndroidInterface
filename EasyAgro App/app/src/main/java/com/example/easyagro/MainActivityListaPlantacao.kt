@@ -1,11 +1,14 @@
 package com.example.easyagro
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
+import com.example.easyagro.Adapter.MyAdapterPlantacao
+import com.example.easyagro.R
 
 
 class MainActivityListaPlantacao : AppCompatActivity() {
@@ -22,9 +25,9 @@ class MainActivityListaPlantacao : AppCompatActivity() {
         var listView = findViewById<ListView>(R.id.listViewPlantacao)
         var list = mutableListOf<Model>()
 
-        list.add(Model("01- Plantação de tomate",  "Sobre a plantação...", R.drawable.plantacaocolorlista))
-        list.add(Model("02- Plantação de cenoura", "Sobre a plantação",    R.drawable.plantacaocolorlista))
-        list.add(Model("03- Plantação de batata",  "Sobre a plantação",    R.drawable.plantacaocolorlista))
+        list.add(Model("Plantação 1", "Sobre a plantação...", R.drawable.plantacaocolorlista))
+        list.add(Model("Plantação 2", "Sobre a plantação", R.drawable.plantacaocolorlista))
+        list.add(Model("Plantação 3", "Sobre a plantação", R.drawable.plantacaocolorlista))
 
 
         listView.adapter = MyAdapterPlantacao(this, R.layout.linha_plantacao, list)
@@ -42,5 +45,16 @@ class MainActivityListaPlantacao : AppCompatActivity() {
 
         }
     }
+
+    fun plantaçãoCadastro (view: View){
+        val listaCadastroPlantacao = Intent(this, MainActivityCadastroPlantacao::class.java)
+        startActivity(listaCadastroPlantacao)
+    }
+
+    fun plantacaoGrafico (view: View){
+        val mensagem1 = "Tela em construção..."
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+    }
+
 }
 

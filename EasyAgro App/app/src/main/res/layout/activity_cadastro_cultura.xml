@@ -32,6 +32,7 @@
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoLista"
+            android:onClick="irListaCultura"
             android:textColor="#FFF"
             android:textSize="20sp" />
 
@@ -43,6 +44,7 @@
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoGrafico"
+            android:onClick="irGraficoCultura"
             android:textColor="#FFF"
             android:textSize="20sp" />
 
@@ -65,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <!--LinearLayout principal -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -329,6 +332,45 @@
                     android:entries="@array/array_quant_agua_aplicada" />
             </LinearLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempoRespiro"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:fontFamily="@font/exo_2"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_respiro_recomendada"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:fontFamily="@font/exo_2"
+                    android:hint=" .  .  ."
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/input_tempo_respiro"
+                    android:layout_width="172dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/inputboard"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_tempo_acao" />
+
+            </LinearLayout>
+
 
             <TextView
                 android:layout_marginTop="35dp"
@@ -419,6 +461,7 @@
                     android:background="@drawable/btn"
                     android:fontFamily="@font/exo_2"
                     android:text="@string/botaoCadastrar"
+                    android:onClick="btCadastrarCultura"
                     android:textColor="#FFF" />
 
                 <Button
@@ -430,6 +473,7 @@
                     android:background="@drawable/btncancelar"
                     android:fontFamily="@font/exo_2"
                     android:text="@string/botaoCancelar"
+                    android:onClick="btCancelarCultura"
                     android:textColor="#FFF" />
 
             </LinearLayout>

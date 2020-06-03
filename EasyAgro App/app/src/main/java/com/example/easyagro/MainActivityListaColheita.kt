@@ -6,6 +6,9 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
+import com.example.easyagro.Adapter.MyAdapterColheita
+import com.example.easyagro.R
+import android.content.Intent
 
 class MainActivityListaColheita : AppCompatActivity() {
 
@@ -47,6 +50,21 @@ class MainActivityListaColheita : AppCompatActivity() {
                 Toast.makeText(this@MainActivityListaColheita, "Clicar em colheita 5!", Toast.LENGTH_LONG).show()
             }
         }
+
+        }
+
+        fun irGraficosColheitaLista(view: View){
+
+            val mensagem1 = "Tela em construção..."
+            Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        }
+
+        fun listaCadastroColheita(view: View) {
+
+             val telaCadastroColheitas = Intent(this, MainActivityCadastroColheita::class.java)
+             startActivity(telaCadastroColheitas)
     }
 
 }
+
+

@@ -27,10 +27,11 @@
         <TextView
             android:id="@+id/link_listaColheita"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="20dp"
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
+            android:onClick="irListaColheita"
             android:text="@string/menuFixoLista"
             android:textColor="#FFF"
             android:textSize="20sp" />
@@ -43,6 +44,7 @@
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoGrafico"
+            android:onClick="irGraficosColheita"
             android:textColor="#FFF"
             android:textSize="20sp" />
 
@@ -282,7 +284,7 @@
                 android:textColor="#000"
                 android:textSize="15sp" />
 
-            <!--Botões Cdastrar e Cancelar -->
+            <!--Botões Cadastrar e Cancelar -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -298,6 +300,7 @@
                     android:background="@drawable/btn"
                     android:fontFamily="@font/exo_2"
                     android:text="@string/botaoCadastrar"
+                    android:onClick="btCadastrarColheita"
                     android:textColor="#FFF" />
 
                 <Button
@@ -309,6 +312,7 @@
                     android:background="@drawable/btncancelar"
                     android:fontFamily="@font/exo_2"
                     android:text="@string/botaoCancelar"
+                    android:onClick="btCancelarCadastroDeColheita"
                     android:textColor="#FFF" />
 
             </LinearLayout>

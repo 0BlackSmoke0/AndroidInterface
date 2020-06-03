@@ -1,11 +1,14 @@
 package com.example.easyagro
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
+import com.example.easyagro.Adapter.MyAdapterLeilao
+import com.example.easyagro.R
 
 class MainActivityListaLeilao : AppCompatActivity() {
 
@@ -49,4 +52,13 @@ class MainActivityListaLeilao : AppCompatActivity() {
         }
     }
 
+    fun listaCadastroLeilao(view: View){
+        val leilaoCadastro = Intent(this, MainActivityCadastroLeilao::class.java)
+        startActivity(leilaoCadastro)
+    }
+
+    fun leilaoGrafico(view: View){
+        val mensagem1 = "Tela em construção..."
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+    }
 }

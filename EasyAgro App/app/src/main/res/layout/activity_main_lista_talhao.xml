@@ -21,6 +21,7 @@
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoCadastrar"
+            android:onClick="listaTalhaoCadastro"
             android:textColor="#FFF"
             android:textSize="20sp" />
 
@@ -43,6 +44,7 @@
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoGrafico"
+            android:onClick="graficoTalhao"
             android:textColor="#FFF"
             android:textSize="20sp" />
 

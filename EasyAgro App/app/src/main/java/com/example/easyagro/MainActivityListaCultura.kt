@@ -1,11 +1,14 @@
 package com.example.easyagro
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
+import com.example.easyagro.Adapter.MyAdapterCultura
+import com.example.easyagro.R
 
 class MainActivityListaCultura : AppCompatActivity() {
 
@@ -46,6 +49,17 @@ class MainActivityListaCultura : AppCompatActivity() {
                 Toast.makeText(this@MainActivityListaCultura, "Clicar em cultura 5!", Toast.LENGTH_LONG).show()
             }
         }
+
+    }
+
+    fun culturaCadastro(view: View) {
+        val listaCadastroCultura = Intent(this, MainActivityCadastroCultura::class.java)
+        startActivity(listaCadastroCultura)
+    }
+
+    fun listaGrafico(view: View) {
+        val mensagem1 = "Tela em construção..."
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
     }
 
 }

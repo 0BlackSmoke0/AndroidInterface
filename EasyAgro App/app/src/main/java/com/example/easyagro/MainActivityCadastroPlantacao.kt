@@ -4,10 +4,11 @@ package com.example.easyagro
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_cadastro_plantacao.*
 
-class MainActivityCadastroPlantacao : AppCompatActivity(), View.OnClickListener {
+class MainActivityCadastroPlantacao : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,21 +16,30 @@ class MainActivityCadastroPlantacao : AppCompatActivity(), View.OnClickListener 
 
 
         if (supportActionBar != null) {
-
             supportActionBar!!.hide()
         }
 
-        link_listaPlantacao.setOnClickListener(this)
     }
 
-    override fun onClick(view: View) {
-        val idIrListaPlantacao = view.id
-        if (idIrListaPlantacao == R.id.link_listaPlantacao) {
-            handleSaveIrListaPlantacao()
-        }
+    fun irListaPlantacao(view: View) {
+        val idIrListaPlantacao = Intent(this, MainActivityListaPlantacao::class.java)
+        startActivity(idIrListaPlantacao)
     }
 
-    private fun handleSaveIrListaPlantacao() {
-        startActivity(Intent(this, MainActivityListaPlantacao::class.java))
+    fun irGraficoPlantacao(view: View){
+        val mensagem1 = "Tela em construção..."
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
     }
+
+    fun btCadastrarPlantacao(view: View){
+        val mensagem1 = "Plantação Cadastrada!"
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+    }
+
+    fun btCancelarPlantacao(view: View){
+        val mensagem1 = "Plantação Cancelada!"
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+    }
+
+
 }

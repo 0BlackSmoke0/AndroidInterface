@@ -6,6 +6,8 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_menu_principal.*
 
+// Activity sem nenhuma requisição de dados, não há motivos para fazer a alteração do código para onclick
+// sendo assim não a necessidade de criar onclick e colocar no xml
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 

@@ -50,6 +50,7 @@
         android:layout_marginStart="140dp"
         android:background="@drawable/btncadastrar"
         android:text="@string/finalizarBotao"
+        android:onClick="finalizarCadastro"
         android:textColor="#FFF" />
 
 </LinearLayout>

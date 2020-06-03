@@ -137,6 +137,7 @@
     <string name="produtoAcabado">Produto acabado:</string>
     <string name="culturaPrecoUnitarioVenda">Preço unitário de venda:</string>
     <string name="uni_venda_cultura">Unidade de venda:</string>
+    <string name="tempoRespiro">Tempo de respiro:</string>
 
 
     uni_venda_cultura
@@ -213,6 +214,8 @@
     <string name="loginInputE">Informe seu e-mail...</string>
     <string name="loginInputS">Informe sua senha...</string>
     <string name="loginBotao">  Entrar  </string>
+    <string name="cadastrese"><u><i>Quero me cadastrar.</i></u></string>
+    <string name="esquecisenha"><u><i>Esqueci minha senha.</i></u></string>
     <!--Tela Opcional -->
     <string name="opCadastrar">Cadastre-se</string>
     <string name="opEntre">Entre</string>
@@ -223,6 +226,7 @@
     <string name="tipoUsuario2">Gerenciar Plantação e Leilão</string>
     <string name="tipoUsuario3">Gerenciar Leilão</string>
     <string name="tipoUsuario4">Apenas negociar</string>
+
 
 
 </resources>

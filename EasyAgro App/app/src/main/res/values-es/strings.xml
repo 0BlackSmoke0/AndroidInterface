@@ -77,7 +77,6 @@
     <string name="senhaFinalizar">Finalizar registro</string>
     <string name="senhaTextoPrincipal">"Registra tu contraseña "</string>
     <string name="senhainput">Ingrese la contraseña...</string>
-    <string name="talhaoAreaHorizontal">" Área horizontal: "</string>
     <string name="talhaoAreaVertical">Área vertical:</string>
     <string name="talhaoDisponibilidade">"Disponibilidad: "</string>
     <string name="talhaoDistanciaRuas">Distancia de las calles:</string>
@@ -114,4 +113,8 @@
     <string name="produtoAcabado">Producto terminado:</string>
     <string name="culturaPrecoUnitarioVenda">Precio de venta unitario:</string>
     <string name="uni_venda_cultura">Unidad de ventas:</string>
+    <string name="cadastrese">"Quiero inscribirse "</string>
+    <string name="esquecisenha">Olvidé mi contraseña</string>
+    <string name="app_name">EasyAgro</string>
+    <string name="tempoRespiro">tiempo de respirar:</string>
 </resources>

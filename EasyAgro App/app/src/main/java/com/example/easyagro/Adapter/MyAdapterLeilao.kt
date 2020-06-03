@@ -1,4 +1,4 @@
-package com.example.easyagro
+package com.example.easyagro.Adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.easyagro.Model
+import com.example.easyagro.R
 
 class MyAdapterLeilao(var mCtx: Context, var resources: Int, var items: List<Model>) :
     ArrayAdapter<Model>(mCtx, resources, items) {

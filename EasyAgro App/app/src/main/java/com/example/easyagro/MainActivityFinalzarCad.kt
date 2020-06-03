@@ -6,7 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main_finalzar_cad.*
 
-class MainActivityFinalzarCad : AppCompatActivity(), View.OnClickListener {
+class MainActivityFinalzarCad : AppCompatActivity(){
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,19 +16,10 @@ class MainActivityFinalzarCad : AppCompatActivity(), View.OnClickListener {
         if (supportActionBar != null) {
             supportActionBar!!.hide()
         }
-
-        bt_cadastroValidado.setOnClickListener(this)
     }
 
-    override fun onClick(view: View) {
-        val idValidado = view.id
-        if (idValidado == R.id.bt_cadastroValidado) {
-            handleSaveValidado()
-
-        }
-    }
-
-    private fun handleSaveValidado() {
-        startActivity(Intent(this, Main2Activity::class.java))
+     fun finalizarCadastro(view: View) {
+        val idValidado = Intent(this, Main2Activity::class.java)
+        startActivity(idValidado)
     }
 }

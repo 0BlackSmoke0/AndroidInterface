@@ -195,6 +195,7 @@
                 android:layout_marginLeft="70dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/seta2"
+                android:onClick="voltarTela1"
                 android:fontFamily="@font/exo_2" />
 
             <Button
@@ -203,6 +204,7 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="125dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="avancarTela1"
                 android:background="@drawable/seta" />
 
         </LinearLayout>

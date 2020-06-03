@@ -79,6 +79,7 @@
         android:background="@drawable/btncadastrar"
         android:fontFamily="@font/exo_2"
         android:text="@string/senhaFinalizar"
+        android:onClick="finalizarCadastroUser"
         android:textColor="#FFF" />
 
 

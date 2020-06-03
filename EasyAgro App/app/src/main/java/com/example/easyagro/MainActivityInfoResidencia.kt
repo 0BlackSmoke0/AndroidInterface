@@ -5,9 +5,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.easyagro.R
 import kotlinx.android.synthetic.main.activity_main_info_residencia.*
 
-class MainActivityInfoResidencia : AppCompatActivity(), View.OnClickListener {
+class MainActivityInfoResidencia : AppCompatActivity(){
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,34 +16,18 @@ class MainActivityInfoResidencia : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main_info_residencia)
 
         if (supportActionBar != null) {
-
             supportActionBar!!.hide()
         }
+}
 
-        bt_prox.setOnClickListener(this)
-        bt_ant.setOnClickListener(this)
-    }
-
-    override fun onClick(view: View) {
-        val idResP = view.id
-        if (idResP == R.id.bt_prox) {
-            handleSaveResP()
+    fun avancarTela1(view: View) {
+        val idAvancarTela = Intent(this, MainActivityCadastroSenha::class.java)
+        startActivity(idAvancarTela)
         }
 
-        if (idResP == R.id.bt_ant) {
-            handleSaveResV()
-        }
+    fun voltarTela1(view: View){
+        val idVoltarTela = Intent(this, MainActivityCadastroUsuario::class.java)
+        startActivity(idVoltarTela)
     }
 
-    private fun handleSaveResP() {
-
-        //(invertida (voltar)
-        startActivity(Intent(this, MainActivityCadastroUsuario::class.java))
-    }
-
-    private fun handleSaveResV() {
-
-        //(invertida (voltar)
-        startActivity(Intent(this, MainActivityCadastroSenha::class.java))
-    }
 }

@@ -22,6 +22,7 @@
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoCadastrar"
             android:textColor="#FFF"
+            android:onClick="plantaçãoCadastro"
             android:textSize="20sp" />
 
         <TextView
@@ -43,6 +44,7 @@
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoGrafico"
+            android:onClick="plantacaoGrafico"
             android:textColor="#FFF"
             android:textSize="20sp" />
 

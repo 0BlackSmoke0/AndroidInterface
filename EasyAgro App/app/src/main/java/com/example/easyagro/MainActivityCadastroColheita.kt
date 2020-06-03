@@ -3,10 +3,12 @@ package com.example.easyagro
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.easyagro.R
 import kotlinx.android.synthetic.main.activity_cadastro_colheita.*
 
-class MainActivityCadastroColheita : AppCompatActivity(), View.OnClickListener {
+class MainActivityCadastroColheita : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,16 +19,31 @@ class MainActivityCadastroColheita : AppCompatActivity(), View.OnClickListener {
             supportActionBar!!.hide()
         }
 
-        link_listaColheita.setOnClickListener(this)
     }
 
-    override fun onClick(view: View) {
-        val idIrListaColheita = view.id
-        if (idIrListaColheita == R.id.link_listaColheita) {
-            handleSaveIrListaColheita()
-        }
+    fun irListaColheita(view: View) {
+        val listaDeColheita = Intent(this, MainActivityListaColheita::class.java)
+        startActivity(listaDeColheita)
     }
-    private fun handleSaveIrListaColheita(){
-        startActivity(Intent(this, MainActivityListaColheita::class.java))
+
+    fun irGraficosColheita(view: View){
+        val mensagem1 = "Tela em construção..."
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+
     }
+
+    fun btCadastrarColheita(view: View){
+        val mensagem1 = "Colheita cadastrada com sucesso!"
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+
+    }
+
+    fun btCancelarCadastroDeColheita(view: View){
+
+        val mensagem1 = "Cadastro de colheita cancelado!"
+        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+
+    }
+
+
 }

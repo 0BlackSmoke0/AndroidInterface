@@ -3,10 +3,11 @@ package com.example.easyagro
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main2.*
 
-class Main2Activity : AppCompatActivity(), View.OnClickListener {
+class Main2Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,20 +17,34 @@ class Main2Activity : AppCompatActivity(), View.OnClickListener {
             supportActionBar!!.hide()
         }
 
-        btn_login.setOnClickListener(this)
-
     }
 
-    override fun onClick(view: View) {
+    fun entrarMenu(view: View){
 
-        val id = view.id
-        if (id == R.id.btn_login) {
-            handleSave2()
+        val telaMenuPrincipal = Intent(this, MainActivity::class.java)
+        val login = username.text.toString()
+        val senha = password.text.toString()
+
+        if (login == "Admin" && senha == "admim") {
+
+            val mensagem1 = "Login realizado com sucesso!"
+            Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+
+            startActivity(telaMenuPrincipal)
+
+        } else {
+            val mensagem = "Login ou senha estão incorretos, tente novamente..."
+            Toast.makeText(this, mensagem, Toast.LENGTH_LONG).show()
+
         }
+        telaMenuPrincipal.putExtra("login", login)
+        telaMenuPrincipal.putExtra("login", senha)
     }
 
-    private fun handleSave2() {
-        startActivity(Intent(this, MainActivity::class.java))
-    }
+    fun cadastroUsuario(view: View){
 
+        val telaCadastroUsuarios = Intent(this, MainActivityTipoUsuario::class.java)
+        startActivity(telaCadastroUsuarios)
+    }
 }
+

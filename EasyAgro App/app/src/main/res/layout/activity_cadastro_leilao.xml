@@ -32,6 +32,7 @@
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoLista"
+            android:onClick="irListaLeilao"
             android:textColor="#FFF"
             android:textSize="20sp" />
 
@@ -43,6 +44,7 @@
             android:layout_marginRight="10dp"
             android:fontFamily="@font/exo_2_semibold"
             android:text="@string/menuFixoGrafico"
+            android:onClick="irGraficoleilao"
             android:textColor="#FFF"
             android:textSize="20sp" />
 
@@ -253,6 +255,7 @@
                     android:background="@drawable/btn"
                     android:fontFamily="@font/exo_2"
                     android:text="@string/botaoCadastrar"
+                    android:onClick="btCadastrarLeilao"
                     android:textColor="#FFF" />
 
                 <Button
@@ -264,6 +267,7 @@
                     android:background="@drawable/btncancelar"
                     android:fontFamily="@font/exo_2"
                     android:text="@string/botaoCancelar"
+                    android:onClick="btCancelarLeilao"
                     android:textColor="#FFF" />
 
             </LinearLayout>
