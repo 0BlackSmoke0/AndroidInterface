@@ -29,12 +29,16 @@ class MainActivityCadastroTalhao : AppCompatActivity() {
     }
 
     fun btCadastrarTalhao(view: View){
+        val cadastrarTalhao = Intent(this, MainActivityListaTalhao::class.java)
         val mensagem1 = "Talhão Cadastrado!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        startActivity(cadastrarTalhao)
     }
 
     fun btCancelarTalhao(view: View){
+        val cancelarTalhao = Intent(this, MainActivity::class.java)
         val mensagem1 = "Talhão Cancelado!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        startActivity(cancelarTalhao)
     }
 }

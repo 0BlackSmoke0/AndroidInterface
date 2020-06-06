@@ -109,7 +109,6 @@
     <string name="SpinnerSeletor">Selecione...</string>
 
 
-
     <!--Cadastro de Colheita -->
     <string name="textoPrincipalColheita">Cadastro de colheita</string>
     <string name="textoPlantacaoColetadaColheita">Plantação coletada:</string>
@@ -140,7 +139,6 @@
     <string name="tempoRespiro">Tempo de respiro:</string>
 
 
-    uni_venda_cultura
     <!--Cadstro de Insumos -->
     <string name="insumoTextoPrincipal">Cadastro de insumos</string>
     <string name="insumoNome">Nome do insumos:</string>
@@ -227,6 +225,13 @@
     <string name="tipoUsuario3">Gerenciar Leilão</string>
     <string name="tipoUsuario4">Apenas negociar</string>
 
-
+    <string name="graphInsumo">Gráfico de Insumos</string>
+    <string name="hidriInsumos">Aplicação de Insumos e Hídricos</string>
+    <string name="tempRespiro">Tempo de respiro:</string>
+    <string name="QtdDias">Aplicação por dia:</string>
+    <string name="salvarAplicacao">Salvar Aplicação</string>
+    <string name="cancelarAplicacao">Cancelar Aplicação</string>
+    <string name="link_aplicacao"><u><i>Aplicar insumo e hídrico</i></u></string>
+    <string name="graphPlatacao">Gráfico de Platação</string>
 
 </resources>

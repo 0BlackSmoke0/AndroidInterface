@@ -14,11 +14,9 @@ class MainActivityCadastroPlantacao : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_plantacao)
 
-
         if (supportActionBar != null) {
             supportActionBar!!.hide()
         }
-
     }
 
     fun irListaPlantacao(view: View) {
@@ -27,19 +25,27 @@ class MainActivityCadastroPlantacao : AppCompatActivity() {
     }
 
     fun irGraficoPlantacao(view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val irGraphPlant = Intent(this, MainActivityGraficoPlantacao::class.java)
+        startActivity(irGraphPlant)
+
     }
 
     fun btCadastrarPlantacao(view: View){
+        val cadastrarPlantacao = Intent(this, MainActivityListaPlantacao::class.java)
         val mensagem1 = "Plantação Cadastrada!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        startActivity(cadastrarPlantacao)
     }
 
     fun btCancelarPlantacao(view: View){
+        val cancelarPlantacao = Intent(this, MainActivity::class.java)
         val mensagem1 = "Plantação Cancelada!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        startActivity(cancelarPlantacao)
     }
 
-
+    fun linkAplicacao (view: View){
+        val irAplicacao = Intent(this, MainActivityAplicacaoPlantacao::class.java)
+        startActivity(irAplicacao)
+    }
 }

@@ -94,7 +94,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/exo_2"
                 android:text="@string/plantacaoNome"
@@ -105,7 +105,7 @@
                 android:id="@+id/input_nome_plantacao"
                 android:layout_width="225dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/inputboard"
                 android:fontFamily="@font/exo_2"
@@ -117,7 +117,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/exo_2"
                 android:text="@string/plantacaoDataCriacao"
@@ -128,7 +128,7 @@
                 android:id="@+id/input_data_criação_plantacao"
                 android:layout_width="225dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/inputboard"
                 android:fontFamily="@font/exo_2"
@@ -138,33 +138,11 @@
                 android:textSize="15sp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/exo_2"
-                android:text="@string/plantacaoPrevisaoColheita"
-                android:textColor="#000"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/input_data_previsao_colheita_plantacao"
-                android:layout_width="225dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/inputboard"
-                android:fontFamily="@font/exo_2"
-                android:hint="dia/mês/ano"
-                android:inputType="date"
-                android:textColor="#000"
-                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/exo_2"
                 android:text="@string/plantacaoSelecionarCultura"
@@ -175,7 +153,7 @@
                 android:id="@+id/input_selecionar_cultura_plantacao"
                 android:layout_width="225dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/inputboard"
                 android:drawSelectorOnTop="true"
@@ -184,7 +162,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/exo_2"
                 android:text="@string/plantacaoSelecionarTalhao"
@@ -195,119 +173,45 @@
                 android:id="@+id/input_selecionar_talhao_plantacao"
                 android:layout_width="225dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/inputboard"
                 android:drawSelectorOnTop="true"
                 android:entries="@array/array_padrao" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/exo_2"
-                android:text="@string/plantacaoSelecionarInsumos"
-                android:textColor="#000"
-                android:textSize="15sp" />
-
-            <Spinner
-                android:id="@+id/input_selecionar_insumos_plantacao"
-                android:layout_width="225dp"
+            <Button
+                android:id="@+id/add_1"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/inputboard"
-                android:drawSelectorOnTop="true"
-                android:entries="@array/array_padrao" />
+                android:layout_marginStart="255dp"
+                android:text="+1"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/btncadastrar"/>
+
+            <Button
+                android:id="@+id/exclui_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="-41dp"
+                android:background="@drawable/btncancelar"
+                android:text="-1"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/exo_2"
-                android:text="@string/plantacaoQuantidadeInsumos"
-                android:textColor="#000"
-                android:textSize="15sp" />
-            <!--input quantidade de insumos aplicado -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/input_quant_aplicada_insumo_plantacao"
-                    android:layout_width="45dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/inputboard"
-                    android:fontFamily="@font/exo_2"
-                    android:hint=" .  .  ."
-                    android:inputType="number"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
-
-                <Spinner
-                    android:id="@+id/input_peso_litro_insumo_plantacao"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/inputpeq"
-                    android:drawSelectorOnTop="true"
-                    android:entries="@array/array_insumos_quant_recomendada" />
-
-            </LinearLayout>
-            <!--Campo quantidade de agua aplicada -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/exo_2"
-                    android:text="@string/plantacaoQuantidadeAgua"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
-            <!--input quantidade de agua aplicada -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/input_quant_agua_aplicada_plantacao"
-                    android:layout_width="45dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/inputboard"
-                    android:fontFamily="@font/exo_2"
-                    android:hint=" .  .  ."
-                    android:inputType="number"
-                    android:textColor="#000"
-                    android:textSize="15sp" />
-
-                <Spinner
-                    android:id="@+id/input_quant_lt_ml_aplicad_plantacaoa"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/inputpeq"
-                    android:drawSelectorOnTop="true"
-                    android:entries="@array/array_quant_agua_aplicada" />
-
-            </LinearLayout>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="@string/link_aplicacao"
+               android:layout_marginStart="70dp"
+               android:textSize="20sp"
+               android:onClick="linkAplicacao"
+               android:textColor="@color/colorPrimary"
+               android:fontFamily="@font/exo_2"/>
 
             <!--Botões Cadastrar e Cancelar -->
             <LinearLayout

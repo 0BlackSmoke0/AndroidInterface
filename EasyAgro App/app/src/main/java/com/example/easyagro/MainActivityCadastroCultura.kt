@@ -28,18 +28,19 @@ class MainActivityCadastroCultura : AppCompatActivity(){
     fun irGraficoCultura(view: View){
         val mensagem1 = "Tela em construção..."
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
-
     }
 
     fun btCadastrarCultura(view: View){
+        val cadastrarCultura = Intent(this, MainActivityListaCultura::class.java)
         val mensagem1 = "Cultura Cadastrada!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
-
+        startActivity(cadastrarCultura)
     }
 
     fun btCancelarCultura(view: View){
+        val cancelarCultura = Intent(this, MainActivity::class.java)
         val mensagem1 = "Cultura Cancelada!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
-
+        startActivity(cancelarCultura)
     }
 }

@@ -1,5 +1,4 @@
 package com.example.lista
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         list.add(Model("Insumo 4", "Descrição do insumo 4..", R.drawable.insumoc))
         list.add(Model("Insumo 5", "Descrição do insumo 5..", R.drawable.insumod))
 
-        listView.adapter = MyAdapter(this, R.layout.activity_main, list)
+        listView.adapter = MyAdapter(this, R.layout.linha, list)
 
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position:Int, id:Long ->
             if (position == 0){

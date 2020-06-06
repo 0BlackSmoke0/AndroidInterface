@@ -191,28 +191,7 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/exo_2"
-                android:text="@string/textoPrecoEstimadoColheita"
-                android:textColor="#000"
-                android:textSize="15sp" />
 
-            <EditText
-                android:id="@+id/preco_estimado_colheita"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/inputboard"
-                android:fontFamily="@font/exo_2"
-                android:hint="R$/$"
-                android:inputType="numberDecimal"
-                android:textColor="#000"
-                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"

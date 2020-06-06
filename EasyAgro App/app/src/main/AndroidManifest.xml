@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivityListaLeilao"></activity>
+        <activity android:name=".MainActivityGraficoPlantacao"></activity>
+        <activity android:name=".MainActivityAplicacaoPlantacao" />
+        <activity android:name=".MainActivityGraficoInsumo" />
+        <activity android:name=".MainActivityListaLeilao" />
         <activity android:name=".MainActivityListaColheita" />
         <activity android:name=".MainActivityListaTalhao" />
         <activity android:name=".MainActivityListaCultura" />
@@ -20,18 +23,13 @@
         <activity android:name=".MainActivityUsuarioDif" />
         <activity android:name=".MainActivityFinalzarCad" />
         <activity android:name=".MainActivityCadastroSenha" />
-
-        <activity android:name=".Main2Activity" >
-
+        <activity android:name=".Main2Activity">
             <intent-filter>
-                   <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-                   <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-        <activity android:name=".SplashActivity"/>
         <activity android:name=".MainActivityTipoUsuario" />
         <activity android:name=".MainActivityInfoResidencia" />
         <activity android:name=".MainActivityCadastroUsuario" />

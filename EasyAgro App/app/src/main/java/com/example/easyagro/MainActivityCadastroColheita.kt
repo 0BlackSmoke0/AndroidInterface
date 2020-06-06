@@ -15,7 +15,6 @@ class MainActivityCadastroColheita : AppCompatActivity() {
         setContentView(R.layout.activity_cadastro_colheita)
 
         if (supportActionBar != null) {
-
             supportActionBar!!.hide()
         }
 
@@ -33,16 +32,17 @@ class MainActivityCadastroColheita : AppCompatActivity() {
     }
 
     fun btCadastrarColheita(view: View){
-        val mensagem1 = "Colheita cadastrada com sucesso!"
+        val cadastrarColheita = Intent(this, MainActivityListaColheita::class.java)
+        val mensagem1 = "Colheita cadastrada!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
-
+        startActivity(cadastrarColheita)
     }
 
     fun btCancelarCadastroDeColheita(view: View){
-
-        val mensagem1 = "Cadastro de colheita cancelado!"
+        val cancelarColheita = Intent(this, MainActivity::class.java)
+        val mensagem1 = "Colheita Cancelada."
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
-
+        startActivity(cancelarColheita)
     }
 
 

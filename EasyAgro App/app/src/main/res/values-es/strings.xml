@@ -117,4 +117,17 @@
     <string name="esquecisenha">Olvidé mi contraseña</string>
     <string name="app_name">EasyAgro</string>
     <string name="tempoRespiro">tiempo de respirar:</string>
+
+    <!-- Traduzir nacionalizaer ES-->
+    <string name="graphInsumo">Gráfico de Insumos</string>
+    <string name="hidriInsumos">Aplicação de Hídrico e Insumo</string>
+    <string name="tempRespiro">Tempo de respiro:</string>
+    <string name="QtdDias">Aplicação por dia:</string>
+    <string name="salvarAplicacao">Salvar Aplicação</string>
+    <string name="cancelarAplicacao">Cancelar Aplicação</string>
+    <string name="link_aplicacao"><u><i>Aplicar insumo e hídrico</i></u></string>
+    <string name="graphPlatacao">Gráfico de Platação</string>
+
+
+
 </resources>

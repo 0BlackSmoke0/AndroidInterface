@@ -30,13 +30,17 @@ class MainActivityCadastroLeilao : AppCompatActivity(){
     }
 
     fun btCadastrarLeilao(view: View){
+        val cadastrarLeilao = Intent(this, MainActivityListaLeilao::class.java)
         val mensagem1 = "Leilão Cadastrado!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        startActivity(cadastrarLeilao)
     }
 
     fun btCancelarLeilao(view: View){
+        val cancelarLeilao = Intent(this, MainActivity::class.java)
         val mensagem1 = "Leilão Cancelado!"
         Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        startActivity(cancelarLeilao)
     }
 
 
