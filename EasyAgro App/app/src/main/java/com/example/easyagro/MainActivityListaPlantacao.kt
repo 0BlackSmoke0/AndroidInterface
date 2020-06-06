@@ -52,8 +52,8 @@ class MainActivityListaPlantacao : AppCompatActivity() {
     }
 
     fun plantacaoGrafico (view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val graphPlantacao = Intent(this, MainActivityGraficoPlantacao::class.java)
+        startActivity(graphPlantacao)
     }
 
 }

@@ -25,8 +25,8 @@ class MainActivityCadastroLeilao : AppCompatActivity(){
     }
 
     fun irGraficoleilao(view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val irGraphLeilao = Intent(this, MainActivityGraficoLeilao::class.java)
+        startActivity(irGraphLeilao)
     }
 
     fun btCadastrarLeilao(view: View){

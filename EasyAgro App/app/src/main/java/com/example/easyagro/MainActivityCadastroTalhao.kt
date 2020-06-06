@@ -24,8 +24,8 @@ class MainActivityCadastroTalhao : AppCompatActivity() {
     }
 
     fun irGraficosTalhao(view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val irGraphTalhao = Intent(this, MainActivityGraficoTalhao::class.java)
+        startActivity(irGraphTalhao)
     }
 
     fun btCadastrarTalhao(view: View){

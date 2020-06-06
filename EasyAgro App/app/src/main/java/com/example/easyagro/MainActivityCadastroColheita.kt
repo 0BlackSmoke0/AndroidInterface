@@ -26,9 +26,8 @@ class MainActivityCadastroColheita : AppCompatActivity() {
     }
 
     fun irGraficosColheita(view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
-
+        val irGraphColheita = Intent(this, MainActivityGraficoColheita::class.java)
+        startActivity(irGraphColheita)
     }
 
     fun btCadastrarColheita(view: View){

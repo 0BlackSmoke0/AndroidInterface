@@ -57,8 +57,8 @@ class MainActivityLista_insumo : AppCompatActivity() {
     }
 
     fun insumoGrafico(view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val graphInsumo = Intent(this, MainActivityGraficoInsumo::class.java)
+        startActivity(graphInsumo)
     }
 }
 

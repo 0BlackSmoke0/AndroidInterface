@@ -58,7 +58,7 @@ class MainActivityListaLeilao : AppCompatActivity() {
     }
 
     fun leilaoGrafico(view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val graphLeilao = Intent(this, MainActivityGraficoLeilao::class.java)
+        startActivity(graphLeilao)
     }
 }

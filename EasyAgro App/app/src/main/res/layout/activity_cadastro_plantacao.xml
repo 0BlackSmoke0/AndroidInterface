@@ -199,7 +199,8 @@
                 android:background="@drawable/btncancelar"
                 android:text="-1"
                 android:textColor="#FFF"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:layout_marginBottom="30dp"/>
 
 
 
@@ -210,6 +211,7 @@
                android:layout_marginStart="70dp"
                android:textSize="20sp"
                android:onClick="linkAplicacao"
+               android:layout_marginBottom="15sp"
                android:textColor="@color/colorPrimary"
                android:fontFamily="@font/exo_2"/>
 

@@ -57,7 +57,7 @@ class MainActivityListaTalhao : AppCompatActivity() {
     }
 
     fun graficoTalhao(view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val graphTalhao = Intent(this, MainActivityGraficoTalhao::class.java)
+        startActivity(graphTalhao)
     }
 }

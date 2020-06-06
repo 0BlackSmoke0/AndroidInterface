@@ -225,13 +225,18 @@
     <string name="tipoUsuario3">Gerenciar Leilão</string>
     <string name="tipoUsuario4">Apenas negociar</string>
 
-    <string name="graphInsumo">Gráfico de Insumos</string>
+
     <string name="hidriInsumos">Aplicação de Insumos e Hídricos</string>
     <string name="tempRespiro">Tempo de respiro:</string>
     <string name="QtdDias">Aplicação por dia:</string>
     <string name="salvarAplicacao">Salvar Aplicação</string>
     <string name="cancelarAplicacao">Cancelar Aplicação</string>
     <string name="link_aplicacao"><u><i>Aplicar insumo e hídrico</i></u></string>
+    <string name="graphInsumo">Gráfico de Insumos</string>
     <string name="graphPlatacao">Gráfico de Platação</string>
+    <string name="graphCultura">Gráfico de Cultura</string>
+    <string name="graphColheita">Gráfico de Colheita</string>
+    <string name="graphTalhao">Gráfico de Talhão</string>
+    <string name="graphLeilao">Gráfico de Leilão</string>
 
 </resources>

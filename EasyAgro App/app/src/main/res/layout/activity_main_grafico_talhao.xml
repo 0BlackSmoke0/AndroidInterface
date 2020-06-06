@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivityGraficoPlantacao">
+    tools:context=".MainActivityGraficoTalhao">
 
     <!-- Menu Fixo-->
     <LinearLayout
@@ -15,7 +15,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/link_cadastroInsumoGrafico"
+            android:id="@+id/link_cadastroTalhaoGrafico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
@@ -26,7 +26,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/link_listaIsumoGrafico"
+            android:id="@+id/link_listaTalhaoGrafico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -37,7 +37,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/link_graficoInsumo"
+            android:id="@+id/link_graficoTalhao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -48,7 +48,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/link_menuPlantacao"
+            android:id="@+id/link_menuTalhao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -72,7 +72,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/graphPlatacao"
+        android:text="@string/graphTalhao"
         android:textColor="#31ac7f"
         android:textSize="20dp" />
 

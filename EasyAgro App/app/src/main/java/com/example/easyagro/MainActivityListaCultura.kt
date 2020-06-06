@@ -58,8 +58,8 @@ class MainActivityListaCultura : AppCompatActivity() {
     }
 
     fun listaGrafico(view: View) {
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val graphCultura = Intent(this, MainActivityGraficoCultura::class.java)
+        startActivity(graphCultura)
     }
 
 }

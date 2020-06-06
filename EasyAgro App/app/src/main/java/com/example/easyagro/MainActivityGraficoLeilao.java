@@ -11,7 +11,7 @@ import com.jjoe64.graphview.ValueDependentColor;
 import com.jjoe64.graphview.series.BarGraphSeries;
 import com.jjoe64.graphview.series.DataPoint;
 
-public class MainActivityGraficoPlantacao extends AppCompatActivity {
+public class MainActivityGraficoLeilao extends AppCompatActivity {
 
 
     GraphView grafica;
@@ -19,7 +19,7 @@ public class MainActivityGraficoPlantacao extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_grafico_plantacao);
+        setContentView(R.layout.activity_main_grafico_leilao);
 
         grafica = findViewById(R.id.grafica);
 

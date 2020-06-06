@@ -127,6 +127,10 @@
     <string name="cancelarAplicacao">Cancelar Aplicação</string>
     <string name="link_aplicacao"><u><i>Aplicar insumo e hídrico</i></u></string>
     <string name="graphPlatacao">Gráfico de Platação</string>
+    <string name="graphCultura">Gráfico de Cultura</string>
+    <string name="graphColheita">Gráfico de Colheita</string>
+    <string name="graphTalhao">Gráfico de Talhão</string>
+    <string name="graphLeilao">Gráfico de Leilão</string>
 
 
 

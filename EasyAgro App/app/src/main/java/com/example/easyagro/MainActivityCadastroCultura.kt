@@ -26,8 +26,8 @@ class MainActivityCadastroCultura : AppCompatActivity(){
         }
 
     fun irGraficoCultura(view: View){
-        val mensagem1 = "Tela em construção..."
-        Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
+        val irGraphCultura = Intent(this, MainActivityGraficoCultura::class.java)
+        startActivity(irGraphCultura)
     }
 
     fun btCadastrarCultura(view: View){
