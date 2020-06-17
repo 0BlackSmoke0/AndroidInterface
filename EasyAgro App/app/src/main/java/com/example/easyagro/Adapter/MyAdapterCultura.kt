@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-import com.example.easyagro.Model
+import com.example.easyagro.Models.Model
 import com.example.easyagro.R
 
 class MyAdapterCultura(var mCtx: Context, var resources: Int, var items: List<Model>) :

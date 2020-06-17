@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivityCadastroTalhao">
+    tools:context=".Talhao.MainActivityCadastroTalhao">
 
     <!-- Menu Fixo -->
     <LinearLayout
@@ -54,7 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="3dp"
-            android:src="@drawable/menulateral"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/bt_menu"
             android:outlineSpotShadowColor="#FFF"
             android:layout_marginRight="10dp"
             android:textSize="20sp" />
@@ -109,7 +110,6 @@
                 android:fontFamily="@font/exo_2"
                 android:hint="@string/talhaoInput"
                 android:inputType="textEmailAddress"
-                android:textColor="#000"
                 android:textSize="15sp" />
 
             <TextView

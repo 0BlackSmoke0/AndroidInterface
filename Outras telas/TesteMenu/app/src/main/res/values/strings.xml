@@ -1,0 +1,239 @@
+<resources>
+    <string name="app_name">TesteMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Configurações</string>
+    <string name="nav_header_subtitle">agron.tech@empresa.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_colheita">Colheita</string>
+    <string name="menu_cultura">Cultura</string>
+    <string name="menu_insumo">Insumo</string>
+
+    <string name="home_second">Home Second</string>
+
+    <!--String's dos Spinner's -->
+    <string-array name="array_name">
+        <item>Selecione...</item>
+        <item>2-3 semanas</item>
+        <item>3-6 semanas</item>
+        <item>6-12 semanas</item>
+        <item>1-3 meses</item>
+        <item>4-8 meses</item>
+        <item>8-12 meses</item>
+    </string-array>
+    <string-array name="array_regaçao">
+        <item>Selecione...</item>
+        <item>100 a 300ml a cada 5h</item>
+        <item>400 a 700ml a cada 5h</item>
+        <item>800ml a 1L a cada 5h</item>
+        <item>2L a 5L a cada 5h</item>
+        <item>6L a 9L a cada 5h</item>
+    </string-array>
+    <string-array name="array_tipo">
+        <item>Selecione...</item>
+        <item>Semente</item>
+        <item>Raíz</item>
+        <item>Muda</item>
+    </string-array>
+    <string-array name="array_disponibilidade">
+        <item>Selecione...</item>
+        <item>Disponível</item>
+        <item>Ocupado</item>
+    </string-array>
+    <string-array name="array_uni_venda">
+        <item>Selecione...</item>
+        <item>Caixa</item>
+        <item>Saco</item>
+        <item>Pacote</item>
+    </string-array>
+    <string-array name="array_padrao">
+        <item>Selecione...</item>
+    </string-array>
+    <string-array name="array_insumos">
+        <item>Selecione...</item>
+        <item>Biológico</item>
+        <item>Químico</item>
+    </string-array>
+    <string-array name="array_tempo_acao">
+        <item>Selecione...</item>
+        <item>Horas</item>
+        <item>Dias</item>
+        <item>Semanas</item>
+        <item>Mês</item>
+    </string-array>
+    <string-array name="array_insumos_quant_recomendada">
+        <item>Selecione...</item>
+        <item>LT-Litros</item>
+        <item>ML-Mililitros</item>
+        <item>KG-Kilograma</item>
+        <item>G-Miligramas</item>
+    </string-array>
+    <string-array name="array_quant_agua_aplicada">
+        <item>Selecione...</item>
+        <item>LT-Litros</item>
+        <item>ML-Mililitros</item>
+    </string-array>
+    <string-array name="array_area">
+        <item>Selecione...</item>
+        <item>CM-Centimetros</item>
+        <item>M-Metros</item>
+        <item>KM-Kilometros</item>
+    </string-array>
+    <string-array name="array_recipiente">
+        <item>Selecione...</item>
+        <item>CX-Caixas</item>
+        <item>SC-Sacos</item>
+    </string-array>
+    <string-array name="array_tipo_contato">
+        <item>Sel..</item>
+        <item>Tel</item>
+        <item>Cel</item>
+    </string-array>
+    <string-array name="array_sexo">
+        <item>Selecione...</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+    <string-array name="array_pesagem">
+        <item>Selecione...</item>
+        <item>G-Miligramas</item>
+        <item>KG-Kilogramas</item>
+    </string-array>
+    <!--Organização para fazer a internacionalização do app (i18n) -->
+    <!--String's dos textos da aplicação -->
+    <!--Textos Universais das telas -->
+    <string name="menuPrincipal">Menu</string>
+    <string name="menuFixoCadastrar">Cadastrar</string>
+    <string name="menuFixoLista">Lista</string>
+    <string name="menuFixoGrafico">Gráfico</string>
+    <string name="botaoCadastrar">  Cadastrar  </string>
+    <string name="botaoCancelar">  Cancelar  </string>
+    <string name="botaoCultura">Cultura</string>
+    <string name="botaoTalhao">Talhão</string>
+    <string name="botaoInsumo">Insumo</string>
+    <string name="botaoPlantacao">Plantação</string>
+    <string name="botaoColheita">Colheita</string>
+    <string name="botaoLeilao">Leilão</string>
+    <string name="inputPadrão">Informe...</string>
+    <string name="inputData">dia/mês/ano</string>
+    <string name="inputEmail">exemplo@exemplo.com</string>
+    <string name="SpinnerSeletor">Selecione...</string>
+
+
+
+    <!--Cadastro de Colheita -->
+    <string name="textoPrincipalColheita">Cadastro de colheita</string>
+    <string name="textoPlantacaoColetadaColheita">Plantação coletada:</string>
+    <string name="textoQuantidadeRecipienteColheita">Quantidade de recipientes:</string>
+    <string name="textoPesoRecipienteColheita">Peso por recipientes:</string>
+    <string name="textoPrecoEstimadoColheita">Preço estimado:</string>
+    <string name="textoPrecoPretendidoColheita">Preço Pretendido:</string>
+    <string name="textoCustoColheita">Custo da colheita:</string>
+    <string name="textoDataColheita">Data da colheita:</string>
+    <!--Cadastro de Cultura -->
+    <string name="culturaTextoPrincipal">Cadastro de cultura</string>
+    <string name="culturaNome">Nome da cultura:</string>
+    <string name="culturaInputNome">Informe a cultura...</string>
+    <string name="culturaInputTipo">Informe o tipo da cultura...</string>
+    <string name="culturaEstado">Estado da cultura:</string>
+    <string name="culturaTipo">Tipo da cultura:</string>
+    <string name="culturaUnidadeVenda">Unidade de venda:</string>
+    <string name="culturaRegacaoRecomendada">Regação recomendada:</string>
+    <string name="culturaEspacamentoRecomendado">Espaçamento recomendado:</string>
+    <string name="culturaPrecoUnitario">Preço unitario:</string>
+    <string name="culturaTempoMaturacao">Tempo de maturação (em dias):</string>
+    <string name="insumoEmCultura">Quantidade recomendada de insumo para a cultura cadastrada:</string>
+    <string name="qtd_atual_materiaPrima">Quantidade atual de matéria prima:</string>
+    <string name="materiaPrima">Matéria prima:</string>
+    <string name="produtoAcabado">Produto acabado:</string>
+    <string name="culturaPrecoUnitarioVenda">Preço unitário de venda:</string>
+    <string name="uni_venda_cultura">Unidade de venda:</string>
+
+
+    uni_venda_cultura
+    <!--Cadstro de Insumos -->
+    <string name="insumoTextoPrincipal">Cadastro de insumos</string>
+    <string name="insumoNome">Nome do insumos:</string>
+    <string name="insumoInput">Informe o insumos...</string>
+    <string name="insumoTipo">Tipo de insumo:</string>
+    <string name="insumoTempoAcao">Tempo de ação:</string>
+    <string name="insumoQuantidadeRecomendada">Quantidade recomendada:</string>
+    <string name="insumoPreco">Preço:</string>
+    <string name="insumoVolumeRecipiente">Volume do recipiente:</string>
+    <!--Cadastro de Leilão-->
+    <string name="leilaoTextoPrincipal">Cadastro de leilão</string>
+    <string name="leilaoSecundario">Cadastre os itens que deseja por a venda</string>
+    <string name="leilaoSelecioneColheita">Selecione a colheita:</string>
+    <string name="leilaoQuantidadeRecipientes">Quanditade de recipientes:</string>
+    <string name="leilaoPrecolote">Preço do lote:</string>
+    <string name="leilaoDataVencimento">Data de vencimento do leilão:</string>
+    <string name="leilaoDataConsumo">Data de Consumo:</string>
+    <!--Cadastro de Plantação -->
+    <string name="plantacaoTextoPrincipal">Cadastro de plantação</string>
+    <string name="plantacaoNome">Nome da plantação:</string>
+    <string name="plantacaoInput">Informe a plantação...</string>
+    <string name="plantacaoDataCriacao">Data de criação:</string>
+    <string name="plantacaoPrevisaoColheita">Previsão de colheita:</string>
+    <string name="plantacaoSelecionarCultura">Selecione a cultura:</string>
+    <string name="plantacaoSelecionarTalhao">Selecione o talhão:</string>
+    <string name="plantacaoSelecionarInsumos">Selecione insumos aplicados:</string>
+    <string name="plantacaoQuantidadeInsumos">Quantidade aplicada de insumos:</string>
+    <string name="plantacaoQuantidadeAgua">Quantidade de água aplicada:</string>
+    <string name="plantacaoCusto">Custo da plantação:</string>
+    <!--Cadastro de Talhão -->
+    <string name="talhaoTextoPrincipal">Cadastro de talhão</string>
+    <string name="talhaoNome">Nome do talhão:</string>
+    <string name="talhaoInput">Informe o talhão...</string>
+    <string name="talhaoDisponibilidade">Disponibilidade:</string>
+    <string name="talhaoAreaVertical">Área (em metros):</string>
+    <string name="talhaoDistanciaRuas">Distância das ruas:</string>
+    <string name="talhaoQuantidadeRuas">Quantidade de ruas:</string>
+    <!--Cadastro Usuário -->
+    <string name="usuarioTextoPrincipal">Cadastro de usuário</string>
+    <string name="usuarioTextoSecundario">informe a seguir.</string>
+    <string name="usuarioNome">Nome completo:</string>
+    <string name="usuarioNascimento">Data de nascimento:</string>
+    <string name="usuarioSexo">Sexo:</string>
+    <string name="usuarioTelefone">Telefone:</string>
+    <string name="usuarioCPF">CPF:</string>
+    <string name="usuarioEmail">E-mail:</string>
+    <!--Cadastro Recidência -->
+    <string name="residenciaTextoPrincipal">Informações residênciais</string>
+    <string name="residenciaTextoSecundario">informe as informações a seguir.</string>
+    <string name="residenciaCEP">CEP:</string>
+    <string name="residenciaRua">Rua:</string>
+    <string name="residenciaBairro">Bairro:</string>
+    <string name="residenciaCidade">Cidade:</string>
+    <string name="residenciaEstado">Estado:</string>
+    <string name="residenciaPais">País:</string>
+    <!--Cadastro de senha -->
+    <string name="senhaTextoPrincipal">Cadastre sua senha</string>
+    <string name="senhaCriar">Crie sua senha:</string>
+    <string name="senhainput">Informe a senha...</string>
+    <string name="senhaConfirmar">Confirme sua senha:</string>
+    <string name="senhaFinalizar">   Finalizar Cadastro   </string>
+    <!--Cadastro Finalizado -->
+    <string name="finalizarTextoPrincipal">Cadastro finalizado</string>
+    <string name="finalizarTextoSecundario">"Agora use o e-mail e a senha cadastrada</string>
+    <string name="finalizarTextoTerciario">para entrar no sistema.</string>
+    <string name="finalizarBotao">  Vamos lá!  </string>
+    <!--Tela Login -->
+    <string name="loginTextoPrincipal">Insira suas credenciais</string>
+    <string name="loginEmail">Email:</string>
+    <string name="loginSenha">Senha:</string>
+    <string name="loginInputE">Informe seu e-mail...</string>
+    <string name="loginInputS">Informe sua senha...</string>
+    <string name="loginBotao">  Entrar  </string>
+    <!--Tela Opcional -->
+    <string name="opCadastrar">Cadastre-se</string>
+    <string name="opEntre">Entre</string>
+    <string name="opTexto">OU</string>
+    <!--Tipo de Usuário -->
+    <string name="tipoUsuarioTextoPrincipal">Você se encaixa em qual perfil?</string>
+    <string name="tipoUsuario1">Gerenciar Plantação</string>
+    <string name="tipoUsuario2">Gerenciar Plantação e Leilão</string>
+    <string name="tipoUsuario3">Gerenciar Leilão</string>
+    <string name="tipoUsuario4">Apenas negociar</string>
+</resources>

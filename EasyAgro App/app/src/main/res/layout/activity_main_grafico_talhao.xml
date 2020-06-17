@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivityGraficoTalhao">
+    tools:context=".Talhao.MainActivityGraficoTalhao">
 
     <!-- Menu Fixo-->
     <LinearLayout
@@ -47,16 +47,16 @@
             android:textColor="#BF3F51B5"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/link_menuTalhao"
+        <ImageView
+            android:id="@+id/link_geralGraficoTalhao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/bt_menu"
+            android:outlineSpotShadowColor="#FFF"
             android:layout_marginRight="10dp"
-            android:rotation="@android:integer/status_bar_notification_info_maxnum"
-            android:text="°°°"
-            android:textColor="#FFF"
             android:textSize="20sp" />
 
 

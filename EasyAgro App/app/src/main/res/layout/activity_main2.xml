@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tlog"
-    tools:context=".Main2Activity">
+    android:background="@drawable/telalog"
+
+    tools:context=".Login.Main2Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
 
         <ImageView
@@ -19,8 +21,9 @@
             android:layout_height="102dp"
             android:layout_gravity="center_horizontal|center_vertical"
             android:layout_marginTop="100dp"
-            app:srcCompat="@drawable/logotech"
-            tools:ignore="MissingConstraints" />
+            app:srcCompat="@drawable/logoapp2"
+            tools:ignore="MissingConstraints"
+            />
 
         <TextView
             android:id="@+id/textLogin"
@@ -45,7 +48,7 @@
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="wrap_content"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginBottom="10dp"
@@ -53,9 +56,7 @@
             android:fontFamily="@font/exo_2"
             android:hint="@string/loginInputE"
             android:inputType="textEmailAddress"
-            android:selectAllOnFocus="true"
-            android:textColor="#000"
-            tools:ignore="MissingConstraints" />
+            android:textColor="#000" />
 
         <TextView
             android:id="@+id/text_senha"
@@ -69,16 +70,14 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="wrap_content"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/inputboard"
             android:fontFamily="@font/exo_2"
             android:hint="@string/loginInputS"
-            android:imeOptions="actionDone"
-            android:inputType="textPassword"
-            android:selectAllOnFocus="true" />
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btn_login"
@@ -99,7 +98,7 @@
             android:textSize="15sp"
             android:fontFamily="@font/exo_2"
             android:textColor="#000"
-            android:layout_marginStart="110dp"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:onClick="cadastroUsuario"
             android:layout_marginBottom="8dp"/>
 
@@ -112,9 +111,9 @@
             android:textSize="15sp"
             android:fontFamily="@font/exo_2"
             android:textColor="#000"
-            android:layout_marginStart="105dp"/>
+            android:layout_gravity="center_horizontal|center_vertical"/>
 
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

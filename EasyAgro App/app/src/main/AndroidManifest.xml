@@ -11,39 +11,41 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivityGraficoTalhao"></activity>
-        <activity android:name=".MainActivityGraficoLeilao" />
-        <activity android:name=".MainActivityGraficoColheita" />
-        <activity android:name=".MainActivityGraficoCultura" />
-        <activity android:name=".MainActivityGraficoPlantacao" />
-        <activity android:name=".MainActivityAplicacaoPlantacao" />
-        <activity android:name=".MainActivityGraficoInsumo" />
-        <activity android:name=".MainActivityListaLeilao" />
-        <activity android:name=".MainActivityListaColheita" />
-        <activity android:name=".MainActivityListaTalhao" />
-        <activity android:name=".MainActivityListaCultura" />
-        <activity android:name=".MainActivityListaPlantacao" />
-        <activity android:name=".MainActivityLista_insumo" />
-        <activity android:name=".MainActivityUsuarioDif" />
-        <activity android:name=".MainActivityFinalzarCad" />
-        <activity android:name=".MainActivityCadastroSenha" />
-        <activity android:name=".Main2Activity">
+        <activity android:name=".Leilao.MainActivityBuscarLeilao"></activity>
+        <activity android:name=".Leilao.MainActivityLanceLeilao" />
+        <activity android:name=".Talhao.MainActivityGraficoTalhao" />
+        <activity android:name=".Leilao.MainActivityGraficoLeilao" />
+        <activity android:name=".Colheita.MainActivityGraficoColheita" />
+        <activity android:name=".Cultura.MainActivityGraficoCultura" />
+        <activity android:name=".Plantacao.MainActivityGraficoPlantacao" />
+        <activity android:name=".Plantacao.MainActivityAplicacaoPlantacao" />
+        <activity android:name=".Insumo.MainActivityGraficoInsumo" />
+        <activity android:name=".Leilao.MainActivityListaLeilao" />
+        <activity android:name=".Colheita.MainActivityListaColheita" />
+        <activity android:name=".Talhao.MainActivityListaTalhao" />
+        <activity android:name=".Cultura.MainActivityListaCultura" />
+        <activity android:name=".Plantacao.MainActivityListaPlantacao" />
+        <activity android:name=".Insumo.MainActivityLista_insumo" />
+        <activity android:name=".CadastroUsuario.MainActivityUsuarioDif" />
+        <activity android:name=".CadastroUsuario.MainActivityFinalzarCad" />
+        <activity android:name=".CadastroUsuario.MainActivityCadastroSenha" />
+        <activity android:name=".Login.Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivityTipoUsuario" />
-        <activity android:name=".MainActivityInfoResidencia" />
-        <activity android:name=".MainActivityCadastroUsuario" />
-        <activity android:name=".MainActivityCadastroLeilao" />
-        <activity android:name=".MainActivityCadastroTalhao" />
-        <activity android:name=".MainActivityCadastroColheita" />
-        <activity android:name=".MainActivityCadastroPlantacao" />
-        <activity android:name=".MainActivityCadastroInsumo" />
-        <activity android:name=".MainActivityCadastroCultura" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".CadastroUsuario.MainActivityTipoUsuario" />
+        <activity android:name=".CadastroUsuario.MainActivityInfoResidencia" />
+        <activity android:name=".CadastroUsuario.MainActivityCadastroUsuario" />
+        <activity android:name=".Leilao.MainActivityCadastroLeilao" />
+        <activity android:name=".Talhao.MainActivityCadastroTalhao" />
+        <activity android:name=".Colheita.MainActivityCadastroColheita" />
+        <activity android:name=".Plantacao.MainActivityCadastroPlantacao" />
+        <activity android:name=".Insumo.MainActivityCadastroInsumo" />
+        <activity android:name=".Cultura.MainActivityCadastroCultura" />
+        <activity android:name=".MenuPrincipal.MainActivity" />
     </application>
 
 </manifest>

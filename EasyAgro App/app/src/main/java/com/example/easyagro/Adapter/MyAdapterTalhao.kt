@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.easyagro.Model
+import com.example.easyagro.Models.Model
 import com.example.easyagro.R
 
 class MyAdapterTalhao(var mCtx: Context, var resources: Int, var items: List<Model>) :
