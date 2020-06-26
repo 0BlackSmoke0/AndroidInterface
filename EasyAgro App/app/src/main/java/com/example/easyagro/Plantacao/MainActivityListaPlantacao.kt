@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.easyagro.Adapter.MyAdapterPlantacao
 import com.example.easyagro.Models.Model
 import com.example.easyagro.R
+import com.example.easyagro.testeVisualizacao.MainActivityVisuTesteColheita
 
 
 class MainActivityListaPlantacao : AppCompatActivity() {
@@ -28,25 +29,25 @@ class MainActivityListaPlantacao : AppCompatActivity() {
 
         list.add(
             Model(
-                "Plantação 1",
+                "Batata doce",
                 "Sobre a plantação...",
                 R.drawable.plantacaocolorlista
             )
         )
-        list.add(
-            Model(
-                "Plantação 2",
-                "Sobre a plantação",
-                R.drawable.plantacaocolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Plantação 3",
-                "Sobre a plantação",
-                R.drawable.plantacaocolorlista
-            )
-        )
+//        list.add(
+//            Model(
+//                "Plantação 2",
+//                "Sobre a plantação",
+//                R.drawable.plantacaocolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Plantação 3",
+//                "Sobre a plantação",
+//                R.drawable.plantacaocolorlista
+//            )
+//        )
 
 
         listView.adapter = MyAdapterPlantacao(this,
@@ -54,7 +55,7 @@ class MainActivityListaPlantacao : AppCompatActivity() {
 
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position:Int, id:Long ->
             if (position == 0){
-                Toast.makeText(this@MainActivityListaPlantacao, "Clicar em plantação 01!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivityListaPlantacao, "Clicar em plantação !", Toast.LENGTH_LONG).show()
             }
             if (position == 1){
                 Toast.makeText(this@MainActivityListaPlantacao, "Clicar em plantação 02!", Toast.LENGTH_LONG).show()
@@ -76,5 +77,9 @@ class MainActivityListaPlantacao : AppCompatActivity() {
         startActivity(graphPlantacao)
     }
 
+    fun visualizarColheita(view: View){
+        val visualizarColheita = Intent(this,MainActivityVisuTesteColheita::class.java)
+        startActivity(visualizarColheita)
+    }
 }
 

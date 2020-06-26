@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    tools:context=".testeVisualizacao.MainActivityVisuTesteInsumo">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_cadastroColheitaLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/exo_2_semibold"
+                android:text="@string/menuFixoCadastrar"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/link_listaColheitaLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/exo_2_semibold"
+                android:text="@string/menuFixoLista"
+                android:textColor="#BF3F51B5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/link_graficoColheitaLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/exo_2_semibold"
+                android:text="@string/menuFixoGrafico"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/link_geralListaColheita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/bt_menu"
+                android:outlineSpotShadowColor="#FFF"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição da Cultura "
+            android:paddingTop="100dp"
+            android:paddingStart="100dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome da cultura: Batata doce"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo da cultura: Oriental"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preso por recipiente: 3 KG-Kilograma"
+            android:paddingStart="10dp"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado da cultura: Raíz"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quant.recomendada de insumo : 50 ML-Mililitros"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tempo de maturação(em dias): 45 dias"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quant.atual de matéria prima: 30 KG-Kilograma"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regação recomendada: 2 LT-Litros"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temo de respiro: 12 Horas"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preço unitario de venda: R$ 2.00"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unidade de venda: KG-Kilograma"
+            android:textColor="#000"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/exo_2_semibold"/>
+
+    </LinearLayout>

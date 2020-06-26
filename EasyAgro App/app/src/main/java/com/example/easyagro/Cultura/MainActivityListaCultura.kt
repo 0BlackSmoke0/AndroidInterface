@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.easyagro.Adapter.MyAdapterCultura
 import com.example.easyagro.Models.Model
 import com.example.easyagro.R
+import com.example.easyagro.testeVisualizacao.MainActivityVisuTesteCultura
 
 class MainActivityListaCultura : AppCompatActivity() {
 
@@ -26,39 +27,39 @@ class MainActivityListaCultura : AppCompatActivity() {
 
         list.add(
             Model(
-                "Cultura 1",
-                "Descrição da cultura 1..",
+                "Batata doce",
+                "Descrição da cultura",
                 R.drawable.sementescolorlista
             )
         )
-        list.add(
-            Model(
-                "Cultura 2",
-                "Descrição da cultura 2..",
-                R.drawable.sementescolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Cultura 3",
-                "Descrição da cultura 3..",
-                R.drawable.sementescolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Cultura 4",
-                "Descrição da cultura 4..",
-                R.drawable.sementescolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Cultura 5",
-                "Descrição da cultura 5..",
-                R.drawable.sementescolorlista
-            )
-        )
+//        list.add(
+//            Model(
+//                "Cultura 2",
+//                "Descrição da cultura 2..",
+//                R.drawable.sementescolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Cultura 3",
+//                "Descrição da cultura 3..",
+//                R.drawable.sementescolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Cultura 4",
+//                "Descrição da cultura 4..",
+//                R.drawable.sementescolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Cultura 5",
+//                "Descrição da cultura 5..",
+//                R.drawable.sementescolorlista
+//            )
+//        )
 
         listView.adapter = MyAdapterCultura(this,
             R.layout.linha_cultura, list)
@@ -66,7 +67,7 @@ class MainActivityListaCultura : AppCompatActivity() {
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
 
             if (position == 0) {
-                Toast.makeText(this@MainActivityListaCultura, "Clicar em cultura 1!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivityListaCultura, "Sobre a cultura", Toast.LENGTH_LONG).show()
             }
             if (position == 1) {
                 Toast.makeText(this@MainActivityListaCultura, "Clicar em cultura 2!", Toast.LENGTH_LONG).show()
@@ -94,4 +95,8 @@ class MainActivityListaCultura : AppCompatActivity() {
         startActivity(graphCultura)
     }
 
+    fun visualizarCultura(view: View){
+        val visualizarCultura = Intent(this, MainActivityVisuTesteCultura::class.java)
+        startActivity(visualizarCultura)
+    }
 }

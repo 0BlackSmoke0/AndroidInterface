@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.easyagro.Adapter.MyAdapterTalhao
 import com.example.easyagro.Models.Model
 import com.example.easyagro.R
+import com.example.easyagro.testeVisualizacao.MainActivityVisutesteTalhao
 
 class MainActivityListaTalhao : AppCompatActivity() {
 
@@ -26,39 +27,39 @@ class MainActivityListaTalhao : AppCompatActivity() {
 
         list.add(
             Model(
-                "Talhão 1",
-                "Descrição do Talhão 1..",
+                "Talhão grandão",
+                "Descrição do Talhão ..",
                 R.drawable.talhaocolorlista
             )
         )
-        list.add(
-            Model(
-                "Talhão 2",
-                "Descrição do Talhão 2..",
-                R.drawable.talhaocolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Talhão 3",
-                "Descrição do Talhão 3..",
-                R.drawable.talhaocolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Talhão 4",
-                "Descrição do Talhão 4..",
-                R.drawable.talhaocolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Talhão 5",
-                "Descrição do Talhão 5..",
-                R.drawable.talhaocolorlista
-            )
-        )
+//        list.add(
+//            Model(
+//                "Talhão 2",
+//                "Descrição do Talhão 2..",
+//                R.drawable.talhaocolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Talhão 3",
+//                "Descrição do Talhão 3..",
+//                R.drawable.talhaocolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Talhão 4",
+//                "Descrição do Talhão 4..",
+//                R.drawable.talhaocolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Talhão 5",
+//                "Descrição do Talhão 5..",
+//                R.drawable.talhaocolorlista
+//            )
+//        )
 
         listView.adapter = MyAdapterTalhao(this,
             R.layout.linha_talhao, list)
@@ -66,7 +67,7 @@ class MainActivityListaTalhao : AppCompatActivity() {
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
 
             if (position == 0) {
-                Toast.makeText(this@MainActivityListaTalhao, "Clicar em talhão 1!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivityListaTalhao, "Clicar em talhão!", Toast.LENGTH_LONG).show()
             }
             if (position == 1) {
                 Toast.makeText(this@MainActivityListaTalhao, "Clicar em talhão 2!", Toast.LENGTH_LONG).show()
@@ -91,5 +92,10 @@ class MainActivityListaTalhao : AppCompatActivity() {
     fun graficoTalhao(view: View){
         val graphTalhao = Intent(this, MainActivityGraficoTalhao::class.java)
         startActivity(graphTalhao)
+    }
+
+    fun visualizarTalhao(view: View){
+        val visualizarTalhao = Intent(this, MainActivityVisutesteTalhao::class.java)
+        startActivity(visualizarTalhao)
     }
 }

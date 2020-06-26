@@ -39,15 +39,15 @@
         android:textColor="@color/colorPrimary"
         android:textSize="20dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/exo_2"
-        android:text="@string/plantacaoSelecionarInsumos"
-        android:textColor="#000"
-        android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/plantacaoSelecionarInsumos"
+            android:textColor="#000"
+            android:textSize="15sp" />
 
 
         <Spinner
@@ -156,35 +156,35 @@
             android:textColor="#000"
             android:textSize="15sp"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/input_temp_respiro_plantacao"
-            android:layout_width="45dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/inputboard"
-            android:fontFamily="@font/exo_2"
-            android:hint=" .  .  ."
-            android:inputType="number"
-            android:textColor="#000"
-            android:textSize="15sp" />
+            android:orientation="horizontal">
 
-        <Spinner
-            android:id="@+id/inpur_select_temp_respiro"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="7dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/inputpeq"
-            android:drawSelectorOnTop="true"
-            android:entries="@array/array_quant_agua_aplicada" />
+            <EditText
+                android:id="@+id/input_temp_respiro_plantacao"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputboard"
+                android:fontFamily="@font/exo_2"
+                android:hint=" .  .  ."
+                android:inputType="number"
+                android:textColor="#000"
+                android:textSize="15sp" />
 
-    </LinearLayout>
+            <Spinner
+                android:id="@+id/inpur_select_temp_respiro"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputpeq"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_quant_agua_aplicada" />
+
+        </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"

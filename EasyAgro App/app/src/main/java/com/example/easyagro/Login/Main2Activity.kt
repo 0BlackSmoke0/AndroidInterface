@@ -27,7 +27,7 @@ class Main2Activity : AppCompatActivity() {
         val login = username.text.toString()
         val senha = password.text.toString()
 
-        if (login == "admin"  && senha == "admin") {
+        if (login == "bertucci.henrique@gmail.com"  && senha == "@48285904806Pp") {
             val mensagem1 = "Login realizado com sucesso!"
             Toast.makeText(this, mensagem1, Toast.LENGTH_LONG).show()
             startActivity(telaMenuPrincipal)

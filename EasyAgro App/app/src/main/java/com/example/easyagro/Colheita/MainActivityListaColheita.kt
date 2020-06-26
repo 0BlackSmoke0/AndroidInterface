@@ -10,6 +10,7 @@ import com.example.easyagro.Adapter.MyAdapterColheita
 import android.content.Intent
 import com.example.easyagro.Models.Model
 import com.example.easyagro.R
+import com.example.easyagro.testeVisualizacao.MainActivityVisuTesteColheita
 
 class MainActivityListaColheita : AppCompatActivity() {
 
@@ -27,39 +28,39 @@ class MainActivityListaColheita : AppCompatActivity() {
 
         list.add(
             Model(
-                "Colheita 1",
-                "Descrição da Colheita 1..",
+                "Colheita Batata doce",
+                "Descrição da Colheita ",
                 R.drawable.colheitacolorlista
             )
         )
-        list.add(
-            Model(
-                "Colheita 2",
-                "Descrição da Colheita 2..",
-                R.drawable.colheitacolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Colheita 3",
-                "Descrição da Colheita 3..",
-                R.drawable.colheitacolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Colheita 4",
-                "Descrição da Colheita 4..",
-                R.drawable.colheitacolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Colheita 5",
-                "Descrição da Colheita 5..",
-                R.drawable.colheitacolorlista
-            )
-        )
+//        list.add(
+//            Model(
+//                "Colheita 2",
+//                "Descrição da Colheita 2..",
+//                R.drawable.colheitacolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Colheita 3",
+//                "Descrição da Colheita 3..",
+//                R.drawable.colheitacolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Colheita 4",
+//                "Descrição da Colheita 4..",
+//                R.drawable.colheitacolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Colheita 5",
+//                "Descrição da Colheita 5..",
+//                R.drawable.colheitacolorlista
+//            )
+//        )
 
         listView.adapter = MyAdapterColheita(this,
             R.layout.linha_colheita, list)
@@ -97,6 +98,10 @@ class MainActivityListaColheita : AppCompatActivity() {
              startActivity(telaCadastroColheitas)
     }
 
+    fun visualizarColheita(view: View) {
+        val visualizarColheita = Intent(this, MainActivityVisuTesteColheita::class.java)
+        startActivity(visualizarColheita)
+    }
 }
 
 

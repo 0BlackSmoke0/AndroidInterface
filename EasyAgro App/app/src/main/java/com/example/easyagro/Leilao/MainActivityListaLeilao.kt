@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.easyagro.Adapter.MyAdapterLeilao
 import com.example.easyagro.Models.Model
 import com.example.easyagro.R
+import com.example.easyagro.testeVisualizacao.MainActivityVisuTesteLeilao
 
 class MainActivityListaLeilao : AppCompatActivity() {
 
@@ -27,39 +28,39 @@ class MainActivityListaLeilao : AppCompatActivity() {
 
         list.add(
             Model(
-                "Leilão 1",
-                "Descrição do Leilão 1..",
+                "Batata Candy",
+                "Descrição do Leilão ..",
                 R.drawable.leilaocolorlista
             )
         )
-        list.add(
-            Model(
-                "Leilão 2",
-                "Descrição do Leilão 2..",
-                R.drawable.leilaocolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Leilão 3",
-                "Descrição do Leilão 3..",
-                R.drawable.leilaocolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Leilão 4",
-                "Descrição do Leilão 4..",
-                R.drawable.leilaocolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Leilão 5",
-                "Descrição do Leilão 5..",
-                R.drawable.leilaocolorlista
-            )
-        )
+//        list.add(
+//            Model(
+//                "Leilão 2",
+//                "Descrição do Leilão 2..",
+//                R.drawable.leilaocolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Leilão 3",
+//                "Descrição do Leilão 3..",
+//                R.drawable.leilaocolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Leilão 4",
+//                "Descrição do Leilão 4..",
+//                R.drawable.leilaocolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Leilão 5",
+//                "Descrição do Leilão 5..",
+//                R.drawable.leilaocolorlista
+//            )
+//        )
 
         listView.adapter = MyAdapterLeilao(this,
             R.layout.linha_leilao, list)
@@ -67,7 +68,7 @@ class MainActivityListaLeilao : AppCompatActivity() {
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
 
             if (position == 0) {
-                Toast.makeText(this@MainActivityListaLeilao, "Clicar em leilão 1!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivityListaLeilao, "Clicar em leilão ", Toast.LENGTH_LONG).show()
             }
             if (position == 1) {
                 Toast.makeText(this@MainActivityListaLeilao, "Clicar em leilão 2!", Toast.LENGTH_LONG).show()
@@ -92,5 +93,10 @@ class MainActivityListaLeilao : AppCompatActivity() {
     fun leilaoGrafico(view: View){
         val graphLeilao = Intent(this, MainActivityGraficoLeilao::class.java)
         startActivity(graphLeilao)
+    }
+
+    fun visualizarLeilao(view: View){
+        val visualizarLeilão = Intent(this,MainActivityVisuTesteLeilao::class.java)
+        startActivity(visualizarLeilão)
     }
 }

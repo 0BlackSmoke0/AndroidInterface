@@ -50,6 +50,7 @@
             android:layout_marginTop="-55dp"
             android:layout_marginLeft="140dp"
             android:background="@drawable/btvisualizar"
+            android:onClick="visualizarCultura"
             android:drawableTop="@drawable/icon"
             />
 

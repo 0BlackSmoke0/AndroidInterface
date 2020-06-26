@@ -26,39 +26,39 @@ class MainActivityLista_insumo : AppCompatActivity() {
 
         list.add(
             Model(
-                "Insumo 1",
-                "Descrição do insumo 1..",
+                "Cresce rapido",
+                "Descrição do insumo..",
                 R.drawable.insumoscolorlista
             )
         )
-        list.add(
-            Model(
-                "Insumo 2",
-                "Descrição do insumo 2..",
-                R.drawable.insumoscolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Insumo 3",
-                "Descrição do insumo 3..",
-                R.drawable.insumoscolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Insumo 4",
-                "Descrição do insumo 4..",
-                R.drawable.insumoscolorlista
-            )
-        )
-        list.add(
-            Model(
-                "Insumo 5",
-                "Descrição do insumo 5..",
-                R.drawable.insumoscolorlista
-            )
-        )
+//        list.add(
+//            Model(
+//                "Insumo 2",
+//                "Descrição do insumo 2..",
+//                R.drawable.insumoscolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Insumo 3",
+//                "Descrição do insumo 3..",
+//                R.drawable.insumoscolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Insumo 4",
+//                "Descrição do insumo 4..",
+//                R.drawable.insumoscolorlista
+//            )
+//        )
+//        list.add(
+//            Model(
+//                "Insumo 5",
+//                "Descrição do insumo 5..",
+//                R.drawable.insumoscolorlista
+//            )
+//        )
 
         listView.adapter = MyAdapterInsumo(this,
             R.layout.linha_insumo, list)
@@ -66,7 +66,7 @@ class MainActivityLista_insumo : AppCompatActivity() {
         listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
 
             if (position == 0) {
-                Toast.makeText(this@MainActivityLista_insumo, "Clicar em insumo 1!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivityLista_insumo, "Clicar em insumo !", Toast.LENGTH_LONG).show()
             }
             if (position == 1) {
                 Toast.makeText(this@MainActivityLista_insumo, "Clicar em insumo 2!", Toast.LENGTH_LONG).show()
